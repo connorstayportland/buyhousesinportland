@@ -17,12 +17,13 @@ export function Footer() {
               <span className="text-white font-bold">Buy Houses in Portland</span>
             </Link>
             <p className="text-sm leading-relaxed mb-4">
-              We are local Portland cash home buyers. We buy houses in any condition,
-              any situation — no repairs, no commissions, no hassle.
+              Licensed Oregon real estate agents specializing in off-market sales
+              to cash buyers and investors. We represent sellers and structure deals
+              around what you need to walk away with.
             </p>
             <div className="text-sm space-y-1">
               <p>📞 <a href="tel:503-927-2565" className="hover:text-amber-400 transition-colors">503-927-2565</a></p>
-              <p>📍 [YOUR_ADDRESS], Portland, OR</p>
+              <p>📍 1011 SE Oak St, Portland, OR 97214</p>
               <p>✉️ <a href="mailto:info@buyhousesinportland.com" className="hover:text-amber-400 transition-colors">info@buyhousesinportland.com</a></p>
             </div>
           </div>
@@ -79,8 +80,8 @@ export function Footer() {
             © {currentYear} Buy Houses in Portland. All rights reserved.
           </p>
           <p>
-            We are not real estate agents. We are professional home buyers.
-            buyhousesinportland.com is a direct buyer, not an MLS listing service.
+            Licensed Oregon Real Estate Agents. We specialize in off-market transactions
+            and represent sellers in sales to cash buyers and investors.
           </p>
         </div>
       </div>

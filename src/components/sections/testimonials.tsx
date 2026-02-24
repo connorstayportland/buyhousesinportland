@@ -5,7 +5,7 @@ const testimonials = [
     name: "Sarah M.",
     location: "Southeast Portland",
     stars: 5,
-    text: "I was facing foreclosure and didn't know what to do. [YOUR_NAME] and the team called me within hours and made the whole process so easy. We closed in 9 days and I walked away with cash. Highly recommend!",
+    text: "I was facing foreclosure and didn't know what to do. The team reached out within hours and made the whole process so easy. They found a buyer quickly and we closed fast. I walked away with what I needed. Highly recommend.",
     situation: "Foreclosure",
   },
   {
