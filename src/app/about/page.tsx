@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us — Licensed Portland Real Estate Agents & Investors",
   description:
-    "We are a Portland-based team of licensed real estate agents and investors, founded in 2025. We specialize in off-market sales to cash buyers — representing sellers every step of the way.",
+    "We are a Portland-based team of licensed real estate agents and active developers. We specialize in off-market sales — representing sellers and connecting them with serious cash buyers.",
   alternates: {
     canonical: "https://buyhousesinportland.com/about",
   },
@@ -18,51 +18,64 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl font-bold mb-4">About Our Team</h1>
           <p className="text-xl text-gray-300">
-            Licensed Oregon agents and local investors helping Portland homeowners
-            sell on their terms — off-market, fast, and without the uncertainty of a traditional listing.
+            Licensed Oregon agents and active Portland developers — we know this market
+            from the inside, and we use that to get sellers a better outcome.
           </p>
         </div>
       </div>
 
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-16">
             <div>
               <h2 className="text-2xl font-bold text-[#0D2B45] mb-6">
-                Who We Are
+                Why We Built This
               </h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
-                  We are a small, Portland-based team of licensed real estate agents and
-                  active investors. We started in <strong>2025</strong> with a focus on
-                  infill development — but we quickly found that a lot of sellers were
-                  reaching out who needed something different from what the traditional
-                  market could offer them.
+                  Our team has been active in Portland real estate development since 2025,
+                  focused primarily on infill projects — acquiring underutilized properties
+                  and building housing the city actually needs.
                 </p>
                 <p>
-                  Not everyone wants to list on the MLS, deal with showings, make repairs,
-                  or wait months for a financed buyer to close. Some sellers just need a
-                  clean, fast transaction with someone they can trust.
+                  That work taught us something: the best deals rarely show up on the MLS.
+                  They come from sellers who have a real reason to move quickly and don&apos;t
+                  want to go through the friction of a traditional listing.
                 </p>
                 <p>
-                  So we built a network of serious cash buyers and investors — and now
-                  we represent sellers through that process. You get licensed agent
-                  representation, a buyer from our vetted network, and a closing timeline
-                  that actually works for you.
+                  We also noticed that a lot of those sellers were getting a raw deal —
+                  either accepting too little from an unsophisticated cash buyer, or burning
+                  months and thousands of dollars trying to list a property that wasn&apos;t
+                  right for the retail market.
+                </p>
+                <p>
+                  So we built a better option. We represent sellers as licensed agents,
+                  take their property directly to our network of serious buyers and investors,
+                  and structure the deal around what the seller actually needs to walk away with.
+                  Fast, clean, and with someone in their corner the whole time.
                 </p>
               </div>
-              <p className="text-xs text-amber-600 italic mt-4">
-                * Add your personal story and team photos here before launching.
-              </p>
             </div>
 
-            <div className="relative h-64 lg:h-80 rounded-2xl overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80"
-                alt="Buy Houses in Portland team"
-                fill
-                className="object-cover"
-              />
+            {/* Photo */}
+            <div className="flex flex-col items-center text-center">
+              <div className="relative w-56 h-56 rounded-2xl overflow-hidden shadow-lg mb-4">
+                <Image
+                  src="/connor-headshot.jpg"
+                  alt="Connor — Licensed Oregon Real Estate Agent"
+                  fill
+                  className="object-cover object-top"
+                />
+              </div>
+              <p className="font-bold text-[#0D2B45] text-lg">Connor</p>
+              <p className="text-gray-500 text-sm">Licensed Oregon Real Estate Agent</p>
+              <p className="text-gray-500 text-sm">Portland Developer &amp; Investor</p>
+              <a
+                href="tel:503-927-2565"
+                className="mt-4 text-amber-600 font-semibold hover:underline text-sm"
+              >
+                503-927-2565
+              </a>
             </div>
           </div>
 
@@ -78,7 +91,7 @@ export default function AboutPage() {
               },
               {
                 title: "Local Knowledge",
-                desc: "We know Portland neighborhoods, values, and the investor community here. We're not a national call center.",
+                desc: "We're active Portland developers. We know neighborhoods, values, and the buyer community here better than most.",
               },
             ].map((val) => (
               <div key={val.title} className="p-6 bg-[#F8FAFC] rounded-xl border border-gray-100">
