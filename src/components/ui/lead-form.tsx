@@ -137,11 +137,11 @@ export function LeadForm({ source = "website", variant = "inline" }: LeadFormPro
         disabled={isPending}
         className="w-full bg-amber-500 hover:bg-amber-600 disabled:opacity-60 disabled:cursor-not-allowed text-white font-bold py-4 px-6 rounded-lg text-lg transition-colors duration-200"
       >
-        {isPending ? "Sending..." : "Get My Free Cash Offer →"}
+        {isPending ? "Sending..." : "Get In Touch With Our Team →"}
       </button>
 
       <p className="text-xs text-gray-500 text-center">
-        100% free. No obligation. No spam. We&apos;ll call you within 24 hours.
+        Free consultation. No obligation. We respond within 24 hours.
       </p>
     </form>
   );

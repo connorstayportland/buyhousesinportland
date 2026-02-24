@@ -67,7 +67,7 @@ export async function submitLead(
     console.error("Supabase insert error:", error);
     return {
       success: false,
-      message: "Something went wrong. Please call us directly at [YOUR_PHONE].",
+      message: "Something went wrong. Please call us directly at 503-927-2565.",
     };
   }
 

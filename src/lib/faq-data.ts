@@ -1,42 +1,42 @@
 export const faqs = [
   {
-    question: "How do you determine your cash offer?",
+    question: "How does this work if you're licensed agents — aren't you just a real estate team?",
     answer:
-      "We evaluate your home based on its location, size, condition, and recent comparable sales in the Portland area. We account for the cost of any repairs we'll need to make, our holding costs, and a reasonable profit margin. Our goal is to give you the fairest offer possible while also making the deal work for us.",
+      "We're licensed Oregon agents, but we operate very differently from a traditional listing team. We don't put your home on the MLS, hold open houses, or wait for a retail buyer with bank financing. Instead, we take your property directly to our network of cash buyers and investors, structure the deal around what you need to walk away with, and close without the delays of a traditional sale.",
   },
   {
-    question: "Will you really buy my house in any condition?",
+    question: "How do you get paid if you're representing me?",
     answer:
-      "Yes. We've purchased homes with fire damage, foundation issues, mold, roof problems, hoarder situations, and more. You never need to clean, repair, or even move everything out — we handle it all after closing.",
+      "Our fee is built into the transaction on the buyer side — meaning we structure the sale price so that your proceeds meet your number, and our fee is covered by what the buyer pays above that. You're not writing us a check out of your proceeds. As your agents, we are required to disclose this structure to you upfront, and we will.",
   },
   {
-    question: "How fast can you really close?",
+    question: "Do I have to know what my house is worth before reaching out?",
     answer:
-      "We can close in as little as 7 days in most cases. The primary variable is the title search and any liens or title issues that need to be resolved. Most of our Portland closings happen within 10–14 days. We can also close on your timeline if you need more time.",
+      "Not at all. A big part of what we do in that initial conversation is help you understand what your property is realistically worth to a cash buyer in its current condition. We'll walk you through the numbers transparently so you can make an informed decision about whether this path makes sense for you.",
   },
   {
-    question: "Are there any fees or commissions?",
+    question: "Will you buy my house yourselves, or are you always finding an outside buyer?",
     answer:
-      "Absolutely none. We are not real estate agents — we are direct buyers. You pay zero commissions, zero agent fees, and in most cases we cover your closing costs too. The offer we make is the amount you receive.",
+      "Both, depending on the property. We purchase select properties directly when they fit our investment criteria. For everything else, we represent you and find the right buyer from our investor network. Either way, you have licensed agent representation throughout the process.",
   },
   {
-    question: "Am I obligated to accept the offer?",
+    question: "Does my house need to be in good condition?",
     answer:
-      "No. Our cash offer is 100% free and there's no obligation whatsoever. You can request an offer, review it, and walk away at any time — no pressure, no fees. We believe in giving you all the information you need to make the best decision for your situation.",
+      "No. The buyers in our network purchase properties as-is — including homes needing significant repairs, deferred maintenance, fire or water damage, or properties that haven't been updated in decades. You don't need to clean, repair, or do anything to the property before we talk.",
   },
   {
-    question: "What if my house has tenants?",
+    question: "How fast can this close?",
     answer:
-      "We regularly purchase rental properties with tenants in place. We understand Oregon landlord-tenant law and will work within it. You don't need to evict your tenants before selling to us.",
+      "Significantly faster than a traditional sale. Because we're working with cash buyers, there's no bank financing to wait on, no appraisal, and no loan contingencies. Once you accept an offer, the main variable is the title search and any existing liens. Most transactions in our network close well within the timeframe of a typical financed sale.",
   },
   {
-    question: "How is this different from listing with an agent?",
+    question: "Am I locked in if I reach out?",
     answer:
-      "Listing with an agent means showings, open houses, waiting for offers, financing contingencies, inspections, and typically 45–90 days before closing — with 5–6% in commissions deducted at the end. Selling to us means a private sale, no showings, cash in 7–14 days, and zero fees. The trade-off is that our offer may be slightly below market value, but many sellers find the speed, certainty, and savings on fees more than make up for it.",
+      "No. Our initial conversation is a free, no-pressure consultation. You're under no obligation at any point until you sign a purchase agreement. We want you to feel fully informed before making any decision.",
   },
   {
-    question: "What areas of Portland do you serve?",
+    question: "What areas do you serve?",
     answer:
-      "We buy homes throughout the greater Portland metro area including all Portland neighborhoods, Beaverton, Gresham, Lake Oswego, Hillsboro, Tigard, Tualatin, Milwaukie, Happy Valley, Oregon City, and Clackamas. Call us if you're unsure about your specific area.",
+      "We work throughout the greater Portland metro area — all Portland neighborhoods plus surrounding cities in Multnomah, Washington, and Clackamas counties, including Beaverton, Gresham, Lake Oswego, Hillsboro, Tigard, Tualatin, Milwaukie, Happy Valley, Oregon City, and Clackamas. Call us at 503-927-2565 if you're unsure whether we cover your area.",
   },
 ];

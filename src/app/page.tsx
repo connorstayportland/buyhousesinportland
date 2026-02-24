@@ -12,9 +12,9 @@ import { faqs } from "@/lib/faq-data";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Sell My House Fast Portland OR | Cash Home Buyers",
+  title: "Sell Your Portland Home Off-Market | Licensed Agents & Investor Network",
   description:
-    "Get a fair cash offer for your Portland home in 24–48 hours. No repairs, no commissions, close in 7–14 days. Trusted local cash buyer serving all Portland neighborhoods.",
+    "Licensed Oregon agents representing sellers in off-market cash transactions. Tell us what you need to walk away with — we find the right buyer. No MLS, no repairs, no uncertainty.",
   alternates: {
     canonical: "https://buyhousesinportland.com",
   },
@@ -54,11 +54,12 @@ export default function HomePage() {
       <section className="py-16 bg-[#0D2B45]">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Get Your Cash Offer?
+            Tell Us What You Need to Walk Away With
           </h2>
           <p className="text-gray-300 mb-8">
-            Fill out the form below and we&apos;ll call you within 24 hours.
-            No repairs. No fees. No obligation.
+            Our team will be in touch within 24 hours. We&apos;ll listen to your situation,
+            walk you through the numbers, and let you decide if this is the right path —
+            no pressure, no obligation.
           </p>
           <div className="bg-white rounded-2xl p-6 lg:p-8">
             <LeadForm source="bottom-cta" />

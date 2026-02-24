@@ -1,65 +1,84 @@
 import Image from "next/image";
 import { LeadForm } from "@/components/ui/lead-form";
 
+const CheckIcon = () => (
+  <svg className="w-5 h-5 text-amber-400 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+  </svg>
+);
+
+const valueProps = [
+  "Licensed Oregon agents representing you, the seller",
+  "We find the right buyer from our investor network — off-market",
+  "Tell us what you need to walk away with. We structure the deal around that.",
+  "Cash closings — no bank financing, no contingencies",
+  "No MLS listing, no showings, no repairs required",
+];
+
 export function Hero() {
   return (
     <section className="relative bg-[#0D2B45] text-white overflow-hidden">
-      {/* Background image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600&q=80"
-          alt="Portland Oregon skyline"
+          alt="Portland Oregon"
           fill
-          className="object-cover opacity-20"
+          className="object-cover opacity-10"
           priority
           sizes="100vw"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D2B45] via-[#0D2B45]/95 to-[#0D2B45]/80" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left: Headline + value props */}
           <div>
-            <div className="inline-flex items-center gap-2 bg-amber-500 text-white text-sm font-bold px-3 py-1 rounded-full mb-6">
-              🏠 Local Portland Cash Buyers
+            <div className="inline-flex items-center gap-2 border border-amber-400/50 text-amber-400 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-8">
+              Licensed Oregon Real Estate Agents
             </div>
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
-              Sell Your Portland Home Fast for Cash
+
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">
+              Sell Your Portland Home Off-Market — We Represent You
             </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              Get a fair cash offer within 24 hours. We buy houses in any condition —
-              no repairs, no commissions, no showings. Close in as little as 7 days.
+
+            <p className="text-lg text-gray-300 leading-relaxed mb-8">
+              We are a Portland-based team of licensed agents and investors. Tell us what
+              you need to walk away with — we&apos;ll find the right cash buyer from our
+              investor network and structure the deal around your number. No MLS,
+              no repairs, no uncertainty.
             </p>
 
-            {/* Value props */}
-            <ul className="space-y-3 mb-8">
-              {[
-                "✅ Fair cash offer in 24–48 hours",
-                "✅ No repairs or cleaning required",
-                "✅ Zero commissions or fees",
-                "✅ Close in 7–14 days or on your timeline",
-                "✅ No obligation — completely free",
-              ].map((item) => (
+            <ul className="space-y-3 mb-10">
+              {valueProps.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-200">
+                  <CheckIcon />
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="flex flex-wrap gap-4 text-sm text-gray-400">
-              <span>🏡 500+ homes purchased</span>
-              <span>⭐ 4.9/5 seller satisfaction</span>
-              <span>📍 Portland &amp; surrounding areas</span>
+            <div className="flex flex-wrap gap-6 text-sm text-gray-400 border-t border-white/10 pt-6">
+              <div>
+                <span className="block text-white font-bold text-lg">24 Hours</span>
+                We&apos;ll Be In Touch
+              </div>
+              <div className="border-l border-white/10 pl-6">
+                <span className="block text-white font-bold text-lg">All Cash</span>
+                No Financing Contingencies
+              </div>
+              <div className="border-l border-white/10 pl-6">
+                <span className="block text-white font-bold text-lg">Off-Market</span>
+                No MLS Required
+              </div>
             </div>
           </div>
 
-          {/* Right: Lead form */}
           <div id="offer-form" className="bg-white rounded-2xl p-6 lg:p-8 shadow-2xl">
             <h2 className="text-xl font-bold text-[#0D2B45] mb-2">
-              Get Your Free Cash Offer
+              Tell Us About Your Property
             </h2>
-            <p className="text-gray-600 text-sm mb-6">
-              Fill out the form and we&apos;ll call you within 24 hours with a fair, no-obligation offer.
+            <p className="text-gray-500 text-sm mb-6">
+              Our team will be in touch within 24 hours to discuss your situation and what you need from the sale.
             </p>
             <LeadForm source="hero" />
           </div>

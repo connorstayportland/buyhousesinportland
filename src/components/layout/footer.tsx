@@ -21,7 +21,7 @@ export function Footer() {
               any situation — no repairs, no commissions, no hassle.
             </p>
             <div className="text-sm space-y-1">
-              <p>📞 <a href="tel:[YOUR_PHONE]" className="hover:text-amber-400 transition-colors">[YOUR_PHONE]</a></p>
+              <p>📞 <a href="tel:503-927-2565" className="hover:text-amber-400 transition-colors">503-927-2565</a></p>
               <p>📍 [YOUR_ADDRESS], Portland, OR</p>
               <p>✉️ <a href="mailto:info@buyhousesinportland.com" className="hover:text-amber-400 transition-colors">info@buyhousesinportland.com</a></p>
             </div>

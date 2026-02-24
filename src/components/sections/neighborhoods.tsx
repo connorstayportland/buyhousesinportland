@@ -33,8 +33,8 @@ export function NeighborhoodsSection() {
         <div className="text-center">
           <p className="text-gray-600 text-sm">
             Don&apos;t see your area?{" "}
-            <a href="tel:[YOUR_PHONE]" className="text-amber-600 font-semibold hover:underline">
-              Call us at [YOUR_PHONE]
+            <a href="tel:503-927-2565" className="text-amber-600 font-semibold hover:underline">
+              Call us at 503-927-2565
             </a>{" "}
             — we may still be able to help.
           </p>

@@ -34,10 +34,10 @@ export default function HowItWorksPage() {
           </h2>
           <div className="space-y-4">
             {[
-              { day: "Day 1", title: "Submit Your Info", desc: "Fill out our form or call us. We review your property details." },
-              { day: "Day 1–2", title: "We Call You", desc: "Our team researches your property and calls with a fair cash offer. No pressure." },
-              { day: "Day 2–5", title: "You Decide", desc: "Review the offer at your own pace. No obligation — ever." },
-              { day: "Day 5–14", title: "Close & Get Paid", desc: "Sign at a local title company. Cash or wire transfer — your choice." },
+              { day: "Day 1", title: "Submit Your Info", desc: "Fill out our form or call us. Tell us about your property and your situation." },
+              { day: "Within 24 hrs", title: "We Reach Out", desc: "A member of our team contacts you to learn more and discuss your options — no pressure, no commitment." },
+              { day: "Days 2–7", title: "Review Your Options", desc: "We'll present a direct offer or identify the right buyer from our network. Take all the time you need." },
+              { day: "Your Timeline", title: "Close & Get Paid", desc: "We coordinate with a local title company for a smooth cash closing. No financing delays." },
             ].map((step) => (
               <div key={step.day} className="flex gap-4 p-4 bg-white rounded-lg border border-gray-100">
                 <div className="flex-shrink-0 w-20 text-center">

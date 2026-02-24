@@ -37,10 +37,10 @@ export function Header() {
               FAQ
             </Link>
             <a
-              href="tel:[YOUR_PHONE]"
+              href="tel:503-927-2565"
               className="text-amber-400 font-bold hover:text-amber-300 transition-colors"
             >
-              📞 [YOUR_PHONE]
+              📞 503-927-2565
             </a>
             <Link
               href="/#offer-form"
@@ -86,10 +86,10 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="tel:[YOUR_PHONE]"
+              href="tel:503-927-2565"
               className="block text-amber-400 font-bold py-2 px-2"
             >
-              📞 [YOUR_PHONE]
+              📞 503-927-2565
             </a>
             <Link
               href="/#offer-form"

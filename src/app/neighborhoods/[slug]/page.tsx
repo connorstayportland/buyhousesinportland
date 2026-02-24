@@ -50,7 +50,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
     name: `Buy Houses in Portland — ${hood.name}`,
     description: `Cash home buyers serving ${hood.name}, Oregon. We buy houses fast, as-is, for cash.`,
     url: `https://buyhousesinportland.com/neighborhoods/${hood.slug}`,
-    telephone: "[YOUR_PHONE]",
+    telephone: "503-927-2565",
     address: {
       "@type": "PostalAddress",
       addressLocality: hood.name,

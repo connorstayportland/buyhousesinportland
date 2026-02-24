@@ -52,10 +52,10 @@ export default function NeighborhoodsPage() {
               We may still be able to help. Call us to discuss your property.
             </p>
             <a
-              href="tel:[YOUR_PHONE]"
+              href="tel:503-927-2565"
               className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-8 rounded-lg transition-colors"
             >
-              Call [YOUR_PHONE]
+              Call 503-927-2565
             </a>
           </div>
         </div>

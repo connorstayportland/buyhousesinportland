@@ -14,19 +14,19 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://buyhousesinportland.com"),
   title: {
-    default: "Sell My House Fast Portland OR | Cash Home Buyers",
+    default: "Sell Your Portland Home Off-Market | Licensed Agents & Investor Network",
     template: "%s | Buy Houses in Portland",
   },
   description:
-    "Get a fair cash offer for your Portland home in 24–48 hours. No repairs, no commissions, close in 7–14 days. Trusted local cash buyer serving all Portland neighborhoods.",
+    "Licensed Oregon agents specializing in off-market sales to cash buyers and investors. Tell us what you need — we structure the deal around your number. No MLS, no repairs, no uncertainty.",
   keywords: [
     "sell my house fast Portland",
+    "off market home sale Portland",
     "cash home buyers Portland OR",
     "sell house as-is Portland",
-    "we buy houses Portland Oregon",
-    "sell house fast Portland",
-    "cash for houses Portland",
-    "buy my house Portland",
+    "Portland real estate investor",
+    "sell house without listing Portland",
+    "cash for houses Portland Oregon",
   ],
   authors: [{ name: "Buy Houses in Portland" }],
   creator: "Buy Houses in Portland",
@@ -80,9 +80,9 @@ const localBusinessSchema = {
   "@type": "RealEstateAgent",
   name: "Buy Houses in Portland",
   description:
-    "We buy houses for cash in Portland, Oregon and surrounding areas. No repairs, no commissions, close in 7–14 days.",
+    "Licensed Oregon real estate agents specializing in off-market sales to cash buyers and investors. We represent sellers, structure deals around your number, and close fast — no MLS, no repairs.",
   url: "https://buyhousesinportland.com",
-  telephone: "[YOUR_PHONE]",
+  telephone: "503-927-2565",
   email: "info@buyhousesinportland.com",
   address: {
     "@type": "PostalAddress",
