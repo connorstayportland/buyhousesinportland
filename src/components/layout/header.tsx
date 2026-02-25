@@ -11,14 +11,18 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-              <rect width="36" height="36" rx="6" fill="#F5A40C" />
-              <path d="M18 6L30 16V30H22V22H14V30H6V16L18 6Z" fill="#0D2B45" />
+          <Link href="/" className="flex items-center gap-3">
+            <svg width="36" height="32" viewBox="0 0 36 32" fill="none" aria-hidden="true">
+              {/* Roof */}
+              <path d="M2 16L18 3L34 16" stroke="#F5A40C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              {/* Walls */}
+              <path d="M6 16V30H30V16" stroke="#F5A40C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              {/* Door */}
+              <path d="M14 30V23H22V30" stroke="#F5A40C" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="text-white font-bold text-lg leading-tight">
-              Buy Houses<br />
-              <span className="text-amber-400 text-sm font-semibold">in Portland</span>
+            <span className="flex flex-col leading-none">
+              <span className="text-gray-400 text-[10px] font-medium tracking-[0.2em] uppercase">Buy Houses in</span>
+              <span className="text-white font-bold text-lg tracking-wide">Portland</span>
             </span>
           </Link>
 
@@ -46,7 +50,7 @@ export function Header() {
               href="/#offer-form"
               className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-200 text-sm"
             >
-              Get My Cash Offer
+              Talk to Our Team
             </Link>
           </nav>
 
@@ -96,7 +100,7 @@ export function Header() {
               className="block bg-amber-500 text-white font-bold py-3 px-4 rounded-lg text-center"
               onClick={() => setMobileOpen(false)}
             >
-              Get My Cash Offer
+              Talk to Our Team
             </Link>
           </nav>
         )}
