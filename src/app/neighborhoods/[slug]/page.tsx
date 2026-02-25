@@ -24,14 +24,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Sell My House Fast in ${hood.name} OR | Cash Home Buyers`,
-    description: `We buy houses fast for cash in ${hood.name}, Oregon. Get a fair offer in 24 hours. No repairs, no commissions. Close in 7–14 days.`,
+    title: `Sell Your ${hood.name} Home Off-Market | Licensed Agents & Investor Network`,
+    description: `Licensed Oregon agents helping ${hood.name} homeowners sell off-market to cash buyers and investors. No MLS, no repairs, no uncertainty — we structure the deal around what you need to walk away with.`,
     alternates: {
       canonical: `https://buyhousesinportland.com/neighborhoods/${hood.slug}`,
     },
     openGraph: {
-      title: `Sell My House Fast in ${hood.name} OR`,
-      description: `Cash home buyers in ${hood.name}. Get a no-obligation offer in 24 hours.`,
+      title: `Sell Your ${hood.name} Home Off-Market`,
+      description: `Licensed Oregon agents representing ${hood.name} sellers in off-market transactions. Tell us your number — we find the right buyer.`,
     },
   };
 }
@@ -93,11 +93,12 @@ export default async function NeighborhoodPage({ params }: PageProps) {
             <span className="text-gray-200">{hood.name}</span>
           </nav>
           <h1 className="text-4xl font-bold mb-4">
-            Sell My House Fast in {hood.name}
+            Sell Your {hood.name} Home Off-Market
           </h1>
           <p className="text-xl text-gray-300">
-            We buy houses for cash in {hood.name}, Oregon. Fair offer in 24 hours,
-            close in as little as 7 days.
+            Licensed Oregon agents representing sellers in {hood.name} — we take your
+            property directly to our investor network and structure the deal around
+            what you need to walk away with.
           </p>
         </div>
       </div>
@@ -112,22 +113,24 @@ export default async function NeighborhoodPage({ params }: PageProps) {
                 We Buy Houses in {hood.name}, OR
               </h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
-                {hood.description} If you need to sell your {hood.name} home quickly —
-                for any reason — we can help. We are local cash buyers who purchase homes
-                in any condition, without requiring repairs, cleaning, or agent commissions.
+                {hood.description} If you want to sell your {hood.name} property without
+                the friction of a traditional listing — no open houses, no repairs, no
+                waiting on bank financing — we can help. As licensed Oregon agents, we
+                represent you and bring your property directly to our network of serious
+                cash buyers and investors.
               </p>
 
               <h3 className="text-lg font-bold text-[#0D2B45] mt-6 mb-3">
-                Why {hood.name} Homeowners Choose Us
+                Why {hood.name} Homeowners Work With Us
               </h3>
               <ul className="space-y-2 text-gray-600">
                 {[
-                  `Cash offer for your ${hood.name} home in 24–48 hours`,
-                  "No repairs, cleaning, or updates required",
-                  "Zero agent commissions or fees",
-                  "Close in 7–14 days or your timeline",
-                  "No financing contingencies — guaranteed close",
-                  "We handle all paperwork and closing costs",
+                  "Licensed Oregon agent representation — we work for you, not the buyer",
+                  "No MLS listing, no open houses, no public exposure",
+                  "No repairs or cleaning required — sold as-is",
+                  "Fast close — cash buyers mean no financing contingencies",
+                  "We structure the deal around what you need to walk away with",
+                  "No obligation until you sign a purchase agreement",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <span className="text-green-500 mt-0.5">✓</span>
@@ -172,10 +175,10 @@ export default async function NeighborhoodPage({ params }: PageProps) {
             <div className="lg:sticky lg:top-20 self-start">
               <div className="bg-[#F8FAFC] rounded-2xl p-6 border border-gray-200">
                 <h2 className="text-xl font-bold text-[#0D2B45] mb-2">
-                  Get Your {hood.name} Cash Offer
+                  Tell Us About Your {hood.name} Property
                 </h2>
                 <p className="text-gray-600 text-sm mb-5">
-                  Free, no-obligation offer. We&apos;ll call you within 24 hours.
+                  Free consultation, no obligation. We&apos;ll be in touch within 24 hours.
                 </p>
                 <LeadForm source={`neighborhood-${hood.slug}`} />
               </div>
