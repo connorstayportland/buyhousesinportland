@@ -7,6 +7,7 @@ import { Situations } from "@/components/sections/situations";
 import { PhotoBreak } from "@/components/sections/photo-break";
 import { Testimonials } from "@/components/sections/testimonials";
 import { NeighborhoodsSection } from "@/components/sections/neighborhoods";
+import { AgentBio } from "@/components/sections/agent-bio";
 import { FaqSection } from "@/components/sections/faq-section";
 import { LeadForm } from "@/components/ui/lead-form";
 import { faqs } from "@/lib/faq-data";
@@ -49,6 +50,7 @@ export default function HomePage() {
       <ComparisonTable />
       <Situations />
       <Testimonials />
+      <AgentBio />
       <NeighborhoodsSection />
 
       {/* Second CTA form */}
