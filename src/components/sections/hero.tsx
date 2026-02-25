@@ -20,8 +20,8 @@ export function Hero() {
     <section className="relative bg-[#0D2B45] text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600&q=80"
-          alt="Portland Oregon"
+          src="https://images.unsplash.com/photo-mF6l5m02e0U?w=1600&q=80"
+          alt="Portland Oregon skyline and Steel Bridge"
           fill
           className="object-cover opacity-10"
           priority

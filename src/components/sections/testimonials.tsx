@@ -72,11 +72,6 @@ export function Testimonials() {
           ))}
         </div>
 
-        {/* Note for site owner */}
-        <p className="text-center text-xs text-gray-400 mt-6 italic">
-          * Replace these placeholder testimonials with real reviews before launching.
-          Collect reviews via Google Business Profile or direct follow-up calls.
-        </p>
       </div>
     </section>
   );
