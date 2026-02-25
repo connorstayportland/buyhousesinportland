@@ -4,7 +4,6 @@ import { useState } from "react";
 import Map, { Marker, Popup, NavigationControl } from "react-map-gl/mapbox";
 import Link from "next/link";
 import { neighborhoods } from "@/lib/neighborhoods";
-import "mapbox-gl/dist/mapbox-gl.css";
 
 type Hood = (typeof neighborhoods)[number];
 
