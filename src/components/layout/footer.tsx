@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -79,14 +80,26 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-navy-600 border-opacity-50 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-          <p>
-            © {currentYear} Buy Houses in Portland. All rights reserved.
-          </p>
-          <p>
-            Licensed Oregon Real Estate Agents. We specialize in off-market transactions
-            and represent sellers in sales to cash buyers and investors.
-          </p>
+        <div className="border-t border-white/10 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <p className="text-xs text-gray-500">
+              © {currentYear} Buy Houses in Portland. All rights reserved.
+            </p>
+            <span className="hidden md:block text-gray-600">·</span>
+            <p className="text-xs text-gray-500">
+              Licensed Oregon Real Estate Agents. We specialize in off-market transactions.
+            </p>
+          </div>
+          <div className="flex flex-col items-center md:items-end gap-1">
+            <p className="text-[10px] text-gray-500 uppercase tracking-widest">Powered by</p>
+            <Image
+              src="/kelly-right-logo.png"
+              alt="Kelly Right Real Estate"
+              width={140}
+              height={40}
+              style={{ filter: "brightness(0) invert(1)", opacity: 0.6 }}
+            />
+          </div>
         </div>
       </div>
     </footer>
