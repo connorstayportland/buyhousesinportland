@@ -28,24 +28,31 @@ export function NeighborhoodMap() {
       map.addControl(new mapboxgl.NavigationControl(), "top-right");
 
       neighborhoods.forEach((hood) => {
+        // Outer wrapper — mapbox transforms this for positioning, we never touch it
         const el = document.createElement("div");
-        el.style.cssText = `
+        el.style.cssText = "width:14px;height:14px;cursor:pointer;";
+
+        // Inner dot — we animate this so it doesn't conflict with mapbox transforms
+        const dot = document.createElement("div");
+        dot.style.cssText = `
           width: 14px;
           height: 14px;
           background: #F5A40C;
           border: 2px solid #fff;
           border-radius: 50%;
-          cursor: pointer;
           box-shadow: 0 1px 4px rgba(0,0,0,0.35);
           transition: transform 0.15s, background 0.15s;
+          transform-origin: center center;
         `;
+        el.appendChild(dot);
+
         el.addEventListener("mouseenter", () => {
-          el.style.transform = "scale(1.4)";
-          el.style.background = "#0D2B45";
+          dot.style.transform = "scale(1.4)";
+          dot.style.background = "#0D2B45";
         });
         el.addEventListener("mouseleave", () => {
-          el.style.transform = "scale(1)";
-          el.style.background = "#F5A40C";
+          dot.style.transform = "scale(1)";
+          dot.style.background = "#F5A40C";
         });
 
         const popup = new mapboxgl.Popup({
