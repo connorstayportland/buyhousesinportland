@@ -1,20 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { neighborhoods } from "@/lib/neighborhoods";
-
-const NeighborhoodMap = dynamic(
-  () => import("@/components/ui/neighborhood-map").then((m) => m.NeighborhoodMap),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="rounded-2xl bg-gray-100 border border-gray-200 mb-8 flex items-center justify-center" style={{ height: 480 }}>
-        <p className="text-gray-400 text-sm">Loading map…</p>
-      </div>
-    ),
-  }
-);
+import { ClientNeighborhoodMap } from "@/components/ui/client-neighborhood-map";
 
 export function NeighborhoodsSection() {
   return (
@@ -30,7 +18,7 @@ export function NeighborhoodsSection() {
           </p>
         </div>
 
-        <NeighborhoodMap />
+        <ClientNeighborhoodMap />
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-8">
           {neighborhoods.map((hood) => (
