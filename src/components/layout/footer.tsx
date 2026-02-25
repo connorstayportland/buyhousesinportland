@@ -9,12 +9,16 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true">
-                <rect width="36" height="36" rx="6" fill="#F5A40C" />
-                <path d="M18 6L30 16V30H22V22H14V30H6V16L18 6Z" fill="#0D2B45" />
+            <Link href="/" className="flex items-center gap-3 mb-4">
+              <svg width="36" height="32" viewBox="0 0 36 32" fill="none" aria-hidden="true">
+                <path d="M2 16L18 3L34 16" stroke="#F5A40C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M6 16V30H30V16" stroke="#F5A40C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M14 30V23H22V30" stroke="#F5A40C" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span className="text-white font-bold">Buy Houses in Portland</span>
+              <span className="flex flex-col leading-none">
+                <span className="text-gray-400 text-[10px] font-medium tracking-[0.2em] uppercase">Buy Houses in</span>
+                <span className="text-white font-bold text-lg tracking-wide">Portland</span>
+              </span>
             </Link>
             <p className="text-sm leading-relaxed mb-4">
               Licensed Oregon real estate agents specializing in off-market sales
