@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Buy Houses in Portland — Sell Fast for Cash";
+export const alt = "Buy Houses in Portland — Licensed Agents & Investor Network";
 export const size = {
   width: 1200,
   height: 630,
@@ -26,20 +26,11 @@ export default async function Image() {
         }}
       >
         {/* House icon */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 100,
-            height: 100,
-            backgroundColor: "#F5A40C",
-            borderRadius: 16,
-            marginBottom: 32,
-          }}
-        >
-          <svg width="64" height="64" viewBox="0 0 36 36" fill="none">
-            <path d="M18 6L30 16V30H22V22H14V30H6V16L18 6Z" fill="#0D2B45" />
+        <div style={{ display: "flex", marginBottom: 32 }}>
+          <svg width="80" height="72" viewBox="0 0 36 32" fill="none">
+            <path d="M2 16L18 3L34 16" stroke="#F5A40C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M6 16V30H30V16" stroke="#F5A40C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M14 30V23H22V30" stroke="#F5A40C" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>
         </div>
 
@@ -54,7 +45,7 @@ export default async function Image() {
             padding: "0 80px",
           }}
         >
-          Sell Your Portland Home Fast for Cash
+          Sell Your Portland Home Off-Market
         </h1>
 
         <p
@@ -65,7 +56,7 @@ export default async function Image() {
             fontWeight: 700,
           }}
         >
-          No Repairs · No Commissions · Close in 7 Days
+          Licensed Agents · Investor Network · No MLS
         </p>
 
         <p
