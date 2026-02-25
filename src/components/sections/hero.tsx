@@ -23,11 +23,11 @@ export function Hero() {
           src="https://images.unsplash.com/photo-mF6l5m02e0U?w=1600&q=80"
           alt="Portland Oregon skyline and Steel Bridge"
           fill
-          className="object-cover opacity-10"
+          className="object-cover opacity-40"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0D2B45] via-[#0D2B45]/95 to-[#0D2B45]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D2B45]/90 via-[#0D2B45]/80 to-[#0D2B45]/60" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
