@@ -95,14 +95,63 @@ const localBusinessSchema = {
     latitude: 45.5051,
     longitude: -122.6750,
   },
-  areaServed: {
-    "@type": "GeoCircle",
-    geoMidpoint: {
-      "@type": "GeoCoordinates",
-      latitude: 45.5051,
-      longitude: -122.6750,
-    },
-    geoRadius: "50000",
+  areaServed: [
+    { "@type": "City", name: "Portland", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Beaverton", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Gresham", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Lake Oswego", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Hillsboro", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Tigard", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Tualatin", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Milwaukie", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Happy Valley", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Oregon City", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Clackamas", containedInPlace: { "@type": "State", name: "Oregon" } },
+    { "@type": "City", name: "Aloha", containedInPlace: { "@type": "State", name: "Oregon" } },
+  ],
+  knowsAbout: [
+    "Off-market home sales",
+    "Cash home buyers Portland Oregon",
+    "Sell house as-is Portland",
+    "Oregon real estate investment",
+    "Portland infill development",
+    "Distressed property sales",
+    "Estate home sales",
+    "Seller representation",
+    "Off-market real estate transactions",
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Off-Market Home Sale Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Off-Market Home Sale Representation",
+          description:
+            "Licensed Oregon agent representation for sellers who want to sell their Portland-area home off-market to cash buyers and investors. No MLS, no repairs, no open houses.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Direct Cash Purchase",
+          description:
+            "We purchase select properties directly when they fit our investment criteria, providing sellers with an immediate cash offer and fast closing.",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Free Property Consultation",
+          description:
+            "No-obligation consultation to assess your property and walk you through realistic cash offer numbers within 24 hours.",
+        },
+      },
+    ],
   },
   openingHoursSpecification: [
     {
