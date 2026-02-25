@@ -1,73 +1,75 @@
 "use client";
 
-import { useState } from "react";
-import Map, { Marker, Popup, NavigationControl } from "react-map-gl/mapbox";
-import Link from "next/link";
+import { useEffect, useRef } from "react";
 import { neighborhoods } from "@/lib/neighborhoods";
 
-type Hood = (typeof neighborhoods)[number];
-
 export function NeighborhoodMap() {
-  const [selected, setSelected] = useState<Hood | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    let map: import("mapbox-gl").Map;
+
+    import("mapbox-gl").then((mapboxgl) => {
+      const mbgl = mapboxgl.default ?? mapboxgl;
+      mbgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? "";
+
+      map = new mbgl.Map({
+        container: containerRef.current!,
+        style: "mapbox://styles/mapbox/light-v11",
+        center: [-122.72, 45.47],
+        zoom: 9.2,
+      });
+
+      map.addControl(new mbgl.NavigationControl(), "top-right");
+
+      neighborhoods.forEach((hood) => {
+        const el = document.createElement("div");
+        el.style.cssText = `
+          width: 14px;
+          height: 14px;
+          background: #F5A40C;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          cursor: pointer;
+          box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+          transition: transform 0.15s, background 0.15s;
+        `;
+        el.addEventListener("mouseenter", () => {
+          el.style.transform = "scale(1.4)";
+          el.style.background = "#0D2B45";
+        });
+        el.addEventListener("mouseleave", () => {
+          el.style.transform = "scale(1)";
+          el.style.background = "#F5A40C";
+        });
+
+        const popup = new mbgl.Popup({ offset: 12, closeOnClick: true })
+          .setHTML(`
+            <div style="padding:2px 4px;">
+              <p style="margin:0 0 4px;font-weight:700;color:#0D2B45;font-size:13px;">${hood.name}</p>
+              <a href="/neighborhoods/${hood.slug}" style="color:#D97706;font-size:12px;font-weight:600;text-decoration:none;">View details →</a>
+            </div>
+          `);
+
+        new mbgl.Marker({ element: el, anchor: "center" })
+          .setLngLat([hood.lng, hood.lat])
+          .setPopup(popup)
+          .addTo(map);
+      });
+    });
+
+    return () => {
+      map?.remove();
+    };
+  }, []);
 
   return (
-    <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 mb-8">
-      <Map
-        initialViewState={{
-          longitude: -122.72,
-          latitude: 45.47,
-          zoom: 9.2,
-        }}
-        style={{ width: "100%", height: 480 }}
-        mapStyle="mapbox://styles/mapbox/light-v11"
-        mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_TOKEN}
-        onClick={() => setSelected(null)}
-      >
-        <NavigationControl position="top-right" />
-
-        {neighborhoods.map((hood) => (
-          <Marker
-            key={hood.slug}
-            longitude={hood.lng}
-            latitude={hood.lat}
-            anchor="bottom"
-            onClick={(e) => {
-              e.originalEvent.stopPropagation();
-              setSelected(hood);
-            }}
-          >
-            <div className="cursor-pointer group flex flex-col items-center">
-              {/* Pin head */}
-              <div className="w-4 h-4 rounded-full bg-amber-500 border-2 border-white shadow-md group-hover:bg-[#0D2B45] group-hover:scale-125 transition-all duration-150" />
-              {/* Pin tail */}
-              <div className="w-0.5 h-2 bg-amber-500 group-hover:bg-[#0D2B45] transition-colors duration-150" />
-            </div>
-          </Marker>
-        ))}
-
-        {selected && (
-          <Popup
-            longitude={selected.lng}
-            latitude={selected.lat}
-            anchor="bottom"
-            offset={20}
-            closeOnClick={false}
-            onClose={() => setSelected(null)}
-            className="neighborhood-popup"
-          >
-            <div className="p-1 min-w-[140px]">
-              <p className="font-bold text-[#0D2B45] text-sm mb-1">{selected.name}</p>
-              <Link
-                href={`/neighborhoods/${selected.slug}`}
-                className="text-amber-600 text-xs font-semibold hover:underline"
-                onClick={() => setSelected(null)}
-              >
-                View details →
-              </Link>
-            </div>
-          </Popup>
-        )}
-      </Map>
-    </div>
+    <div
+      ref={containerRef}
+      className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 mb-8"
+      style={{ height: 480, width: "100%" }}
+    />
   );
 }
