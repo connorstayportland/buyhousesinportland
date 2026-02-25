@@ -3,6 +3,9 @@
 import { useEffect, useRef } from "react";
 import { neighborhoods } from "@/lib/neighborhoods";
 
+// Captured at module level so Next.js replaces it at build time
+const MAPBOX_TOKEN = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? "";
+
 export function NeighborhoodMap() {
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -11,18 +14,18 @@ export function NeighborhoodMap() {
 
     let map: import("mapbox-gl").Map;
 
-    import("mapbox-gl").then((mapboxgl) => {
-      const mbgl = mapboxgl.default ?? mapboxgl;
-      mbgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN ?? "";
+    import("mapbox-gl").then((mod) => {
+      const mapboxgl = mod.default ?? mod;
+      mapboxgl.accessToken = MAPBOX_TOKEN;
 
-      map = new mbgl.Map({
+      map = new mapboxgl.Map({
         container: containerRef.current!,
         style: "mapbox://styles/mapbox/light-v11",
         center: [-122.72, 45.47],
         zoom: 9.2,
       });
 
-      map.addControl(new mbgl.NavigationControl(), "top-right");
+      map.addControl(new mapboxgl.NavigationControl(), "top-right");
 
       neighborhoods.forEach((hood) => {
         const el = document.createElement("div");
@@ -45,18 +48,30 @@ export function NeighborhoodMap() {
           el.style.background = "#F5A40C";
         });
 
-        const popup = new mbgl.Popup({ offset: 12, closeOnClick: true })
-          .setHTML(`
-            <div style="padding:2px 4px;">
-              <p style="margin:0 0 4px;font-weight:700;color:#0D2B45;font-size:13px;">${hood.name}</p>
-              <a href="/neighborhoods/${hood.slug}" style="color:#D97706;font-size:12px;font-weight:600;text-decoration:none;">View details →</a>
-            </div>
-          `);
+        const popup = new mapboxgl.Popup({
+          offset: 12,
+          closeOnClick: true,
+          focusAfterOpen: false,
+        }).setHTML(`
+          <div style="padding:2px 4px;">
+            <p style="margin:0 0 4px;font-weight:700;color:#0D2B45;font-size:13px;">${hood.name}</p>
+            <a href="/neighborhoods/${hood.slug}" style="color:#D97706;font-size:12px;font-weight:600;text-decoration:none;">View details →</a>
+          </div>
+        `);
 
-        new mbgl.Marker({ element: el, anchor: "center" })
+        const marker = new mapboxgl.Marker({ element: el, anchor: "center" })
           .setLngLat([hood.lng, hood.lat])
-          .setPopup(popup)
           .addTo(map);
+
+        // Manually toggle popup on click without triggering map pan
+        el.addEventListener("click", (e) => {
+          e.stopPropagation();
+          if (popup.isOpen()) {
+            popup.remove();
+          } else {
+            popup.setLngLat(marker.getLngLat()).addTo(map);
+          }
+        });
       });
     });
 
