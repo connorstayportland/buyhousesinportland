@@ -1,19 +1,36 @@
+"use client";
+
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { neighborhoods } from "@/lib/neighborhoods";
+
+const NeighborhoodMap = dynamic(
+  () => import("@/components/ui/neighborhood-map").then((m) => m.NeighborhoodMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="rounded-2xl bg-gray-100 border border-gray-200 mb-8 flex items-center justify-center" style={{ height: 480 }}>
+        <p className="text-gray-400 text-sm">Loading map…</p>
+      </div>
+    ),
+  }
+);
 
 export function NeighborhoodsSection() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#0D2B45] mb-4">
             We Buy Houses Throughout Greater Portland
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             We purchase homes in Portland and all surrounding cities in Multnomah,
-            Washington, and Clackamas counties.
+            Washington, and Clackamas counties. Click a pin to explore.
           </p>
         </div>
+
+        <NeighborhoodMap />
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-8">
           {neighborhoods.map((hood) => (
