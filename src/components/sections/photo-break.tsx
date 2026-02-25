@@ -6,8 +6,8 @@ export function PhotoBreak() {
     <section className="relative overflow-hidden" style={{ height: 400 }}>
       {/* Background photo */}
       <Image
-        src="https://images.unsplash.com/photo-mF6l5m02e0U?w=1600&q=80"
-        alt="Portland Oregon"
+        src="https://images.unsplash.com/photo-UVG1K4ejdB8?w=1600&q=80"
+        alt="Portland Oregon skyline"
         fill
         className="object-cover object-center"
         sizes="100vw"
