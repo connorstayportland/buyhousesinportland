@@ -28,7 +28,7 @@ export function Footer() {
             <div className="text-sm space-y-1">
               <p>📞 <a href="tel:503-927-2565" className="hover:text-amber-400 transition-colors">503-927-2565</a></p>
               <p>📍 1011 SE Oak St, Portland, OR 97214</p>
-              <p>✉️ <a href="mailto:info@buyhousesinportland.com" className="hover:text-amber-400 transition-colors">info@buyhousesinportland.com</a></p>
+              <p>✉️ <a href="mailto:claverty@kellyright.com" className="hover:text-amber-400 transition-colors">claverty@kellyright.com</a></p>
             </div>
           </div>
 

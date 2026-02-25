@@ -49,10 +49,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-[#0D2B45]">Email</h3>
                     <a
-                      href="mailto:info@buyhousesinportland.com"
+                      href="mailto:claverty@kellyright.com"
                       className="text-amber-600 hover:underline"
                     >
-                      info@buyhousesinportland.com
+                      claverty@kellyright.com
                     </a>
                     <p className="text-gray-500 text-sm">We respond within 24 hours</p>
                   </div>

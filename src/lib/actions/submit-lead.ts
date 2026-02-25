@@ -89,7 +89,7 @@ export async function submitLead(
     };
     await resend.emails.send({
       from: "leads@buyhousesinportland.com",
-      to: "connor@stayportland.com",
+      to: "claverty@kellyright.com",
       subject: `New Lead: ${result.data.address}`,
       html: `
         <h2>New Lead — Buy Houses in Portland</h2>
