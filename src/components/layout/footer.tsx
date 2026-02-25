@@ -27,7 +27,9 @@ export function Footer() {
               around what you need to walk away with.
             </p>
             <div className="text-sm space-y-1">
-              <p>📞 <a href="tel:503-927-2565" className="hover:text-amber-400 transition-colors">503-927-2565</a></p>
+              <p className="text-white font-semibold">Connor Laverty</p>
+              <p className="text-gray-400 text-xs">Licensed Oregon Real Estate Agent</p>
+              <p className="mt-2">📞 <a href="tel:503-927-2565" className="hover:text-amber-400 transition-colors">503-927-2565</a></p>
               <p>📍 1011 SE Oak St, Portland, OR 97214</p>
               <p>✉️ <a href="mailto:claverty@kellyright.com" className="hover:text-amber-400 transition-colors">claverty@kellyright.com</a></p>
             </div>
