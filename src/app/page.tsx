@@ -4,6 +4,7 @@ import { TrustSignals } from "@/components/sections/trust-signals";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { ComparisonTable } from "@/components/sections/comparison-table";
 import { Situations } from "@/components/sections/situations";
+import { PhotoBreak } from "@/components/sections/photo-break";
 import { Testimonials } from "@/components/sections/testimonials";
 import { NeighborhoodsSection } from "@/components/sections/neighborhoods";
 import { FaqSection } from "@/components/sections/faq-section";
