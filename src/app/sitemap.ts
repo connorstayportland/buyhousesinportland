@@ -2,42 +2,43 @@ import type { MetadataRoute } from "next";
 import { neighborhoods } from "@/lib/neighborhoods";
 
 const BASE_URL = "https://buyhousesinportland.com";
+const LAST_UPDATED = "2026-03-02";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: BASE_URL,
-      lastModified: new Date(),
+      lastModified: LAST_UPDATED,
       changeFrequency: "weekly",
       priority: 1.0,
     },
     {
       url: `${BASE_URL}/how-it-works`,
-      lastModified: new Date(),
+      lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/about`,
-      lastModified: new Date(),
+      lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/faq`,
-      lastModified: new Date(),
+      lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${BASE_URL}/contact`,
-      lastModified: new Date(),
+      lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.7,
     },
     {
       url: `${BASE_URL}/neighborhoods`,
-      lastModified: new Date(),
+      lastModified: LAST_UPDATED,
       changeFrequency: "monthly",
       priority: 0.8,
     },
@@ -45,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const neighborhoodPages: MetadataRoute.Sitemap = neighborhoods.map((hood) => ({
     url: `${BASE_URL}/neighborhoods/${hood.slug}`,
-    lastModified: new Date(),
+    lastModified: LAST_UPDATED,
     changeFrequency: "weekly",
     priority: 0.7,
   }));

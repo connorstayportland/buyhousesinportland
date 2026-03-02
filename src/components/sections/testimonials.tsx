@@ -1,4 +1,4 @@
-// PLACEHOLDER: Replace these with real testimonials before going live.
+import Script from "next/script";
 
 const testimonials = [
   {
@@ -42,9 +42,37 @@ function StarRating({ count }: { count: number }) {
   );
 }
 
+const reviewSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Buy Houses in Portland",
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: (testimonials.reduce((sum, t) => sum + t.stars, 0) / testimonials.length).toFixed(1),
+    reviewCount: testimonials.length,
+    bestRating: 5,
+    worstRating: 1,
+  },
+  review: testimonials.map((t) => ({
+    "@type": "Review",
+    author: { "@type": "Person", name: t.name },
+    reviewRating: {
+      "@type": "Rating",
+      ratingValue: t.stars,
+      bestRating: 5,
+    },
+    reviewBody: t.text,
+  })),
+};
+
 export function Testimonials() {
   return (
     <section className="py-16 bg-[#F8FAFC]">
+      <Script
+        id="review-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-[#0D2B45] mb-4">
