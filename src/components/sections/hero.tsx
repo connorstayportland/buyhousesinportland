@@ -23,11 +23,11 @@ export function Hero() {
           src="https://images.unsplash.com/photo-1628783629868-19fb7eb52e2a?w=1600&q=80"
           alt="Portland Oregon skyline with Mount Hood at sunset"
           fill
-          className="object-cover opacity-40"
+          className="object-cover opacity-60"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0D2B45]/90 via-[#0D2B45]/80 to-[#0D2B45]/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0D2B45]/80 via-[#0D2B45]/60 to-[#0D2B45]/40" />
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
