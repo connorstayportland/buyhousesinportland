@@ -43,6 +43,7 @@ export function Footer() {
                 { href: "/how-it-works", label: "How It Works" },
                 { href: "/about", label: "About Us" },
                 { href: "/faq", label: "FAQ" },
+                { href: "/blog", label: "Blog" },
                 { href: "/contact", label: "Contact" },
                 { href: "/neighborhoods", label: "Areas We Buy" },
               ].map((link) => (
