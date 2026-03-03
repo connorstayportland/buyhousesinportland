@@ -1,7 +1,9 @@
 "use server";
 
 import { z } from "zod";
+import { headers } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
+import { checkRateLimit } from "@/lib/rate-limit";
 import { enrichAndScoreLead } from "@/lib/enrichment/enrich-lead";
 
 const leadSchema = z.object({
@@ -27,6 +29,16 @@ export async function submitLead(
   _prevState: LeadFormState,
   formData: FormData
 ): Promise<LeadFormState> {
+  const headersList = await headers();
+  const ip = headersList.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+  const { allowed } = await checkRateLimit(ip);
+  if (!allowed) {
+    return {
+      success: false,
+      message: "Too many requests. Please try again in a few minutes, or call us at (971) 258-1093.",
+    };
+  }
+
   const raw = {
     address: formData.get("address") as string,
     phone: formData.get("phone") as string,

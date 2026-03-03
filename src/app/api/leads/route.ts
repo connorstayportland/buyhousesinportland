@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
+import { checkRateLimit } from "@/lib/rate-limit";
 
 const leadSchema = z.object({
   address: z.string().min(5),
@@ -13,12 +14,18 @@ const leadSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+    const { allowed } = await checkRateLimit(ip);
+    if (!allowed) {
+      return NextResponse.json({ error: "Too many requests" }, { status: 429 });
+    }
+
     const body = await request.json();
     const result = leadSchema.safeParse(body);
 
     if (!result.success) {
       return NextResponse.json(
-        { error: "Invalid data", details: result.error.flatten() },
+        { error: "Invalid data" },
         { status: 400 }
       );
     }
