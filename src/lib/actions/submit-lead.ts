@@ -1,7 +1,6 @@
 "use server";
 
 import { z } from "zod";
-import { after } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { enrichAndScoreLead } from "@/lib/enrichment/enrich-lead";
 
@@ -77,17 +76,15 @@ export async function submitLead(
     };
   }
 
-  // Fire enrichment pipeline after response is sent — zero UX impact
-  after(() =>
-    enrichAndScoreLead(lead.id, {
-      address: result.data.address,
-      phone: result.data.phone,
-      email: result.data.email || null,
-      condition: result.data.condition || null,
-      timeline: result.data.timeline || null,
-      source: result.data.source || null,
-    })
-  );
+  // Fire enrichment pipeline without blocking the response
+  enrichAndScoreLead(lead.id, {
+    address: result.data.address,
+    phone: result.data.phone,
+    email: result.data.email || null,
+    condition: result.data.condition || null,
+    timeline: result.data.timeline || null,
+    source: result.data.source || null,
+  }).catch((err) => console.error("Enrichment error:", err));
 
   return {
     success: true,
