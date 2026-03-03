@@ -1,10 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const size = {
-  width: 180,
-  height: 180,
-};
-
+export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
 export default function AppleIcon() {
@@ -19,35 +15,12 @@ export default function AppleIcon() {
           justifyContent: "center",
           backgroundColor: "#0D2B45",
           borderRadius: 36,
+          fontSize: 100,
         }}
       >
-        <svg width="120" height="108" viewBox="0 0 36 32" fill="none">
-          <path
-            d="M2 16L18 3L34 16"
-            stroke="#F5A40C"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M6 16V30H30V16"
-            stroke="#F5A40C"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M14 30V23H22V30"
-            stroke="#F5A40C"
-            strokeWidth="1.75"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <span style={{ color: "#F5A40C" }}>&#8962;</span>
       </div>
     ),
-    {
-      ...size,
-    }
+    { ...size }
   );
 }
