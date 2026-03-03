@@ -108,6 +108,6 @@ export async function submitLead(
   return {
     success: true,
     message:
-      "Thank you! We'll call you within 24 hours with your cash offer. No obligation.",
+      "Thank you! We'll be in touch within 24 hours to discuss your options. No obligation.",
   };
 }

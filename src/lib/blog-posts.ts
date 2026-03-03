@@ -456,7 +456,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "callout",
         content:
-          "Need to sell your Portland home fast? We can get you a cash offer within 24 hours and close in as little as 7 days. No repairs, no showings, no waiting. Call (971) 258-1093 or fill out the form to get started — there's zero obligation.",
+          "Need to sell your Portland home fast? We can close in as little as 7 days. No repairs, no showings, no waiting. Call (971) 258-1093 or fill out the form to get started — free consultation, zero obligation.",
       },
     ],
   },
@@ -692,7 +692,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "callout",
         content:
-          "Ready to stop being a landlord? We work with Portland rental property owners every day who are done dealing with the stress. Whether you have one rental or ten, tenants in place or vacant units, we can get you a cash offer within 24 hours. Call (971) 258-1093 or fill out the form on this page. No obligation, no pressure.",
+          "Ready to stop being a landlord? We work with Portland rental property owners every day who are done dealing with the stress. Whether you have one rental or ten, tenants in place or vacant units, we'll walk you through your options. Call (971) 258-1093 or fill out the form on this page. No obligation, no pressure.",
       },
     ],
   },
@@ -921,7 +921,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "callout",
         content:
-          "Have a Portland home with code violations, unpermitted work, or a condemnation notice? We buy problem properties for cash — no repairs needed, no judgment. Get a no-obligation offer within 24 hours. Call (971) 258-1093 or fill out the form on this page.",
+          "Have a Portland home with code violations, unpermitted work, or a condemnation notice? We buy problem properties for cash — no repairs needed, no judgment. Call (971) 258-1093 or fill out the form on this page for a free, no-obligation consultation.",
       },
     ],
   },

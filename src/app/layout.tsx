@@ -150,7 +150,7 @@ const localBusinessSchema = {
           "@type": "Service",
           name: "Free Property Consultation",
           description:
-            "No-obligation consultation to assess your property and walk you through realistic cash offer numbers within 24 hours.",
+            "No-obligation consultation to assess your property and walk you through realistic numbers. We respond within 24 hours.",
         },
       },
     ],

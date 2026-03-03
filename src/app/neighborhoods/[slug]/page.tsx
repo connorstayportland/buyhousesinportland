@@ -25,13 +25,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: `Sell My House Fast ${hood.name} OR | We Buy Houses for Cash`,
-    description: `Sell your ${hood.name} house fast for cash — as-is, no repairs, no listing. Licensed Oregon agents and cash home buyers serving ${hood.name}. Get a fair offer within 24 hours.`,
+    description: `Sell your ${hood.name} house fast for cash — as-is, no repairs, no listing. Licensed Oregon agents and cash home buyers serving ${hood.name}. Free consultation, no obligation.`,
     alternates: {
       canonical: `https://buyhousesinportland.com/neighborhoods/${hood.slug}`,
     },
     openGraph: {
       title: `Sell My House Fast in ${hood.name} | Cash Home Buyers`,
-      description: `We buy houses in ${hood.name}, Oregon. Get a fair cash offer within 24 hours — no repairs, no MLS, close on your timeline.`,
+      description: `We buy houses in ${hood.name}, Oregon — no repairs, no MLS, close on your timeline. Free consultation, no obligation.`,
       images: [`/neighborhoods/${hood.slug}/opengraph-image`],
     },
   };
@@ -128,7 +128,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
           </h1>
           <p className="text-xl text-gray-300">
             We buy houses in {hood.name} for cash — as-is, no repairs, no MLS listing.
-            Licensed Oregon agents representing you. Get a fair offer within 24 hours.
+            Licensed Oregon agents representing you. We'll be in touch within 24 hours.
           </p>
         </div>
       </div>

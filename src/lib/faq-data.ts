@@ -42,7 +42,7 @@ export const faqs = [
   {
     question: "How do I sell my house fast in Portland?",
     answer:
-      "The fastest way to sell your Portland house is to a cash buyer. Skip the MLS listing, skip the repairs, and skip the months of waiting for bank-financed offers. Contact us with your property address and we'll reach out within 24 hours with a no-obligation cash offer. Most cash sales in our network close in 7 to 14 days, compared to 45+ days for a traditional sale.",
+      "The fastest way to sell your Portland house is to a cash buyer. Skip the MLS listing, skip the repairs, and skip the months of waiting for bank-financed offers. Contact us with your property address and we'll be in touch within 24 hours to discuss your options. Most cash sales in our network close in 7 to 14 days, compared to 45+ days for a traditional sale.",
   },
   {
     question: "Can I sell my Portland house if I'm behind on payments?",

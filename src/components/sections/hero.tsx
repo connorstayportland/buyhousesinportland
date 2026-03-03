@@ -38,7 +38,7 @@ export function Hero() {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">
-              Sell Your House Fast in Portland — Cash Offer Within 24 Hours
+              Sell Your House Fast in Portland — We Buy Houses for Cash
             </h1>
 
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
