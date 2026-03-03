@@ -7,6 +7,15 @@ import type {
   LeadFormData,
 } from "./types";
 
+function esc(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 const COLORS: Record<Classification, { bg: string; label: string; tag: string }> = {
   buy_box: { bg: "#16a34a", label: "BUY BOX", tag: "green" },
   network: { bg: "#d97706", label: "NETWORK DEAL", tag: "amber" },
@@ -32,7 +41,7 @@ export function buildSubject(
   address: string
 ): string {
   const { label } = COLORS[classification];
-  return `[${label}] ${address}`;
+  return `[${label}] ${esc(address)}`;
 }
 
 export function buildEmailHtml(opts: {
@@ -71,7 +80,7 @@ export function buildEmailHtml(opts: {
 <div style="padding:24px;max-width:640px;">
 
 <!-- Address -->
-<h2 style="margin:0 0 20px;color:#0D2B45;font-size:22px;">${formData.address}</h2>
+<h2 style="margin:0 0 20px;color:#0D2B45;font-size:22px;">${esc(formData.address)}</h2>
 
 <!-- Two columns -->
 <table width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;">
@@ -81,11 +90,11 @@ export function buildEmailHtml(opts: {
 <td width="50%" style="padding-right:16px;">
   <h3 style="margin:0 0 8px;color:#0D2B45;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;">Lead Info</h3>
   <table style="width:100%;font-size:14px;">
-    ${row("Phone", formData.phone)}
-    ${row("Email", formData.email || "—")}
-    ${row("Condition", formData.condition ? CONDITION_LABELS[formData.condition] ?? formData.condition : "—")}
-    ${row("Timeline", formData.timeline ? TIMELINE_LABELS[formData.timeline] ?? formData.timeline : "—")}
-    ${row("Source", formData.source || "website")}
+    ${row("Phone", esc(formData.phone))}
+    ${row("Email", esc(formData.email || "—"))}
+    ${row("Condition", formData.condition ? esc(CONDITION_LABELS[formData.condition] ?? formData.condition) : "—")}
+    ${row("Timeline", formData.timeline ? esc(TIMELINE_LABELS[formData.timeline] ?? formData.timeline) : "—")}
+    ${row("Source", esc(formData.source || "website"))}
   </table>
 </td>
 

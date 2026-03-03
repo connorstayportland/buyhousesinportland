@@ -5,6 +5,15 @@ import { scoreLead, classifyLead } from "./scoring";
 import { buildSubject, buildEmailHtml } from "./email-template";
 import type { LeadFormData } from "./types";
 
+function esc(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 const NOTIFICATION_EMAIL =
   process.env.LEAD_NOTIFICATION_EMAIL || "connor@stayportland.com";
 
@@ -121,17 +130,17 @@ export async function enrichAndScoreLead(
         .send({
           from: "leads@buyhousesinportland.com",
           to: NOTIFICATION_EMAIL,
-          subject: `New Lead: ${formData.address}`,
+          subject: `New Lead: ${esc(formData.address)}`,
           html: `
             <h2>New Lead — Buy Houses in Portland</h2>
             <p><strong>Enrichment failed</strong> — sending basic notification.</p>
             <table style="border-collapse:collapse;font-family:sans-serif;font-size:15px;">
-              <tr><td style="padding:6px 16px 6px 0;color:#666;">Address</td><td style="padding:6px 0;font-weight:600;">${formData.address}</td></tr>
-              <tr><td style="padding:6px 16px 6px 0;color:#666;">Phone</td><td style="padding:6px 0;font-weight:600;">${formData.phone}</td></tr>
-              <tr><td style="padding:6px 16px 6px 0;color:#666;">Email</td><td style="padding:6px 0;">${formData.email || "—"}</td></tr>
-              <tr><td style="padding:6px 16px 6px 0;color:#666;">Condition</td><td style="padding:6px 0;">${formData.condition || "—"}</td></tr>
-              <tr><td style="padding:6px 16px 6px 0;color:#666;">Timeline</td><td style="padding:6px 0;">${formData.timeline || "—"}</td></tr>
-              <tr><td style="padding:6px 16px 6px 0;color:#666;">Source</td><td style="padding:6px 0;">${formData.source || "website"}</td></tr>
+              <tr><td style="padding:6px 16px 6px 0;color:#666;">Address</td><td style="padding:6px 0;font-weight:600;">${esc(formData.address)}</td></tr>
+              <tr><td style="padding:6px 16px 6px 0;color:#666;">Phone</td><td style="padding:6px 0;font-weight:600;">${esc(formData.phone)}</td></tr>
+              <tr><td style="padding:6px 16px 6px 0;color:#666;">Email</td><td style="padding:6px 0;">${esc(formData.email || "—")}</td></tr>
+              <tr><td style="padding:6px 16px 6px 0;color:#666;">Condition</td><td style="padding:6px 0;">${esc(formData.condition || "—")}</td></tr>
+              <tr><td style="padding:6px 16px 6px 0;color:#666;">Timeline</td><td style="padding:6px 0;">${esc(formData.timeline || "—")}</td></tr>
+              <tr><td style="padding:6px 16px 6px 0;color:#666;">Source</td><td style="padding:6px 0;">${esc(formData.source || "website")}</td></tr>
             </table>
           `,
         })
