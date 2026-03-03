@@ -1,8 +1,9 @@
 "use server";
 
 import { z } from "zod";
+import { after } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { Resend } from "resend";
+import { enrichAndScoreLead } from "@/lib/enrichment/enrich-lead";
 
 const leadSchema = z.object({
   address: z.string().min(5, "Please enter a valid property address"),
@@ -54,17 +55,21 @@ export async function submitLead(
 
   const supabase = await createClient();
 
-  const { error } = await supabase.from("leads").insert({
-    address: result.data.address,
-    phone: result.data.phone,
-    email: result.data.email || null,
-    condition: result.data.condition || null,
-    timeline: result.data.timeline || null,
-    source: result.data.source || "website",
-    status: "new",
-  });
+  const { data: lead, error } = await supabase
+    .from("leads")
+    .insert({
+      address: result.data.address,
+      phone: result.data.phone,
+      email: result.data.email || null,
+      condition: result.data.condition || null,
+      timeline: result.data.timeline || null,
+      source: result.data.source || "website",
+      status: "new",
+    })
+    .select("id")
+    .single();
 
-  if (error) {
+  if (error || !lead) {
     console.error("Supabase insert error:", error);
     return {
       success: false,
@@ -72,38 +77,17 @@ export async function submitLead(
     };
   }
 
-  // Send email notification
-  if (process.env.RESEND_API_KEY) {
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    const conditionLabels: Record<string, string> = {
-      great: "Great — move-in ready",
-      minor: "Minor repairs needed",
-      major: "Major work needed",
-      "not-sure": "Not sure",
-    };
-    const timelineLabels: Record<string, string> = {
-      asap: "ASAP",
-      "30days": "Within 30 days",
-      "60-90days": "60–90 days",
-      "not-sure": "Not sure yet",
-    };
-    await resend.emails.send({
-      from: "leads@buyhousesinportland.com",
-      to: "claverty@kellyright.com",
-      subject: `New Lead: ${result.data.address}`,
-      html: `
-        <h2>New Lead — Buy Houses in Portland</h2>
-        <table style="border-collapse:collapse;font-family:sans-serif;font-size:15px;">
-          <tr><td style="padding:6px 16px 6px 0;color:#666;">Address</td><td style="padding:6px 0;font-weight:600;">${result.data.address}</td></tr>
-          <tr><td style="padding:6px 16px 6px 0;color:#666;">Phone</td><td style="padding:6px 0;font-weight:600;">${result.data.phone}</td></tr>
-          <tr><td style="padding:6px 16px 6px 0;color:#666;">Email</td><td style="padding:6px 0;">${result.data.email || "—"}</td></tr>
-          <tr><td style="padding:6px 16px 6px 0;color:#666;">Condition</td><td style="padding:6px 0;">${result.data.condition ? conditionLabels[result.data.condition] ?? result.data.condition : "—"}</td></tr>
-          <tr><td style="padding:6px 16px 6px 0;color:#666;">Timeline</td><td style="padding:6px 0;">${result.data.timeline ? timelineLabels[result.data.timeline] ?? result.data.timeline : "—"}</td></tr>
-          <tr><td style="padding:6px 16px 6px 0;color:#666;">Source</td><td style="padding:6px 0;">${result.data.source}</td></tr>
-        </table>
-      `,
-    }).catch((err) => console.error("Resend error:", err));
-  }
+  // Fire enrichment pipeline after response is sent — zero UX impact
+  after(() =>
+    enrichAndScoreLead(lead.id, {
+      address: result.data.address,
+      phone: result.data.phone,
+      email: result.data.email || null,
+      condition: result.data.condition || null,
+      timeline: result.data.timeline || null,
+      source: result.data.source || null,
+    })
+  );
 
   return {
     success: true,
