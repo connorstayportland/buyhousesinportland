@@ -53,10 +53,12 @@ export async function submitLead(
   }
 
   const supabase = await createClient();
+  const leadId = crypto.randomUUID();
 
-  const { data: lead, error } = await supabase
+  const { error } = await supabase
     .from("leads")
     .insert({
+      id: leadId,
       address: result.data.address,
       phone: result.data.phone,
       email: result.data.email || null,
@@ -64,11 +66,9 @@ export async function submitLead(
       timeline: result.data.timeline || null,
       source: result.data.source || "website",
       status: "new",
-    })
-    .select("id")
-    .single();
+    });
 
-  if (error || !lead) {
+  if (error) {
     console.error("Supabase insert error:", error);
     return {
       success: false,
@@ -77,7 +77,7 @@ export async function submitLead(
   }
 
   // Fire enrichment pipeline without blocking the response
-  enrichAndScoreLead(lead.id, {
+  enrichAndScoreLead(leadId, {
     address: result.data.address,
     phone: result.data.phone,
     email: result.data.email || null,
