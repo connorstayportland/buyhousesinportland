@@ -44,10 +44,10 @@ export function Header() {
               FAQ
             </Link>
             <a
-              href="tel:503-927-2565"
+              href="tel:971-258-1093"
               className="text-amber-400 font-bold hover:text-amber-300 transition-colors"
             >
-              📞 503-927-2565
+              📞 (971) 258-1093
             </a>
             <Link
               href="/#offer-form"
@@ -94,10 +94,10 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="tel:503-927-2565"
+              href="tel:971-258-1093"
               className="block text-amber-400 font-bold py-2 px-2"
             >
-              📞 503-927-2565
+              📞 (971) 258-1093
             </a>
             <Link
               href="/#offer-form"

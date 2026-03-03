@@ -119,7 +119,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "callout",
         content:
-          "Facing foreclosure in Portland or anywhere in Oregon? Don't wait until the auction date. Contact us for a free, no-obligation consultation. We'll connect you with cash buyers who can close on your timeline — and we represent you as your licensed agent throughout the entire process. Call 503-927-2565 or fill out the form on this page.",
+          "Facing foreclosure in Portland or anywhere in Oregon? Don't wait until the auction date. Contact us for a free, no-obligation consultation. We'll connect you with cash buyers who can close on your timeline — and we represent you as your licensed agent throughout the entire process. Call (971) 258-1093 or fill out the form on this page.",
       },
     ],
   },
@@ -232,7 +232,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "callout",
         content:
-          "Inherited a house in Portland and not sure what to do next? We can help you understand your options — whether you want to sell quickly for cash or take your time. Free consultation, no pressure. Call 503-927-2565 or fill out the form on this page to get started.",
+          "Inherited a house in Portland and not sure what to do next? We can help you understand your options — whether you want to sell quickly for cash or take your time. Free consultation, no pressure. Call (971) 258-1093 or fill out the form on this page to get started.",
       },
     ],
   },
@@ -337,7 +337,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "callout",
         content:
-          "Have a Portland home that needs work? Don't spend money on repairs you'll never enjoy. Get a no-obligation cash offer from our investor network — we'll tell you exactly what your home is worth as-is. Call 503-927-2565 or fill out the form on this page.",
+          "Have a Portland home that needs work? Don't spend money on repairs you'll never enjoy. Get a no-obligation cash offer from our investor network — we'll tell you exactly what your home is worth as-is. Call (971) 258-1093 or fill out the form on this page.",
       },
     ],
   },
@@ -456,7 +456,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "callout",
         content:
-          "Need to sell your Portland home fast? We can get you a cash offer within 24 hours and close in as little as 7 days. No repairs, no showings, no waiting. Call 503-927-2565 or fill out the form to get started — there's zero obligation.",
+          "Need to sell your Portland home fast? We can get you a cash offer within 24 hours and close in as little as 7 days. No repairs, no showings, no waiting. Call (971) 258-1093 or fill out the form to get started — there's zero obligation.",
       },
     ],
   },
@@ -572,7 +572,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "callout",
         content:
-          "Want to sell your Portland home to a cash buyer without the risk? We connect you with vetted investors and represent your interests as your licensed agent. Multiple offers, no pressure, no obligation. Call 503-927-2565 or fill out the form on this page to get a free consultation.",
+          "Want to sell your Portland home to a cash buyer without the risk? We connect you with vetted investors and represent your interests as your licensed agent. Multiple offers, no pressure, no obligation. Call (971) 258-1093 or fill out the form on this page to get a free consultation.",
       },
     ],
   },

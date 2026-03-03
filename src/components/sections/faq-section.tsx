@@ -44,8 +44,8 @@ export function FaqSection() {
           </h2>
           <p className="text-gray-600">
             Have more questions?{" "}
-            <a href="tel:503-927-2565" className="text-amber-600 font-semibold hover:underline">
-              Call us at 503-927-2565
+            <a href="tel:971-258-1093" className="text-amber-600 font-semibold hover:underline">
+              Call us at (971) 258-1093
             </a>
           </p>
         </div>

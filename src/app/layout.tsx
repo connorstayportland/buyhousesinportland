@@ -83,7 +83,7 @@ const localBusinessSchema = {
   description:
     "Licensed Oregon real estate agents specializing in off-market sales to cash buyers and investors. We represent sellers, structure deals around your number, and close fast — no MLS, no repairs.",
   url: "https://buyhousesinportland.com",
-  telephone: "503-927-2565",
+  telephone: "(971) 258-1093",
   email: "claverty@kellyright.com",
   address: {
     "@type": "PostalAddress",
