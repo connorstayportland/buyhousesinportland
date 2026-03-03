@@ -37,14 +37,17 @@ export function Header() {
             <Link href="/neighborhoods" className="text-gray-300 hover:text-white transition-colors">
               Areas We Buy
             </Link>
+            <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
+              Blog
+            </Link>
             <Link href="/faq" className="text-gray-300 hover:text-white transition-colors">
               FAQ
             </Link>
             <a
-              href="tel:503-927-2565"
+              href="tel:971-258-1093"
               className="text-amber-400 font-bold hover:text-amber-300 transition-colors"
             >
-              📞 503-927-2565
+              📞 (971) 258-1093
             </a>
             <Link
               href="/#offer-form"
@@ -77,6 +80,7 @@ export function Header() {
               { href: "/how-it-works", label: "How It Works" },
               { href: "/about", label: "About" },
               { href: "/neighborhoods", label: "Areas We Buy" },
+              { href: "/blog", label: "Blog" },
               { href: "/faq", label: "FAQ" },
               { href: "/contact", label: "Contact" },
             ].map((link) => (
@@ -90,10 +94,10 @@ export function Header() {
               </Link>
             ))}
             <a
-              href="tel:503-927-2565"
+              href="tel:971-258-1093"
               className="block text-amber-400 font-bold py-2 px-2"
             >
-              📞 503-927-2565
+              📞 (971) 258-1093
             </a>
             <Link
               href="/#offer-form"

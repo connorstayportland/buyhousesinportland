@@ -54,10 +54,10 @@ export default function FaqPage() {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <a
-            href="tel:503-927-2565"
+            href="tel:971-258-1093"
             className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition-colors"
           >
-            Call 503-927-2565
+            Call (971) 258-1093
           </a>
           <Link
             href="/contact"

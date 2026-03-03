@@ -71,10 +71,10 @@ export default function AboutPage() {
               <p className="text-gray-500 text-sm">Licensed Oregon Real Estate Agent</p>
               <p className="text-gray-500 text-sm">Portland Developer &amp; Investor</p>
               <a
-                href="tel:503-927-2565"
+                href="tel:971-258-1093"
                 className="mt-4 text-amber-600 font-semibold hover:underline text-sm"
               >
-                503-927-2565
+                (971) 258-1093
               </a>
             </div>
           </div>

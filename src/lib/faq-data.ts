@@ -37,6 +37,6 @@ export const faqs = [
   {
     question: "What areas do you serve?",
     answer:
-      "We work throughout the greater Portland metro area — all Portland neighborhoods plus surrounding cities in Multnomah, Washington, and Clackamas counties, including Beaverton, Gresham, Lake Oswego, Hillsboro, Tigard, Tualatin, Milwaukie, Happy Valley, Oregon City, and Clackamas. Call us at 503-927-2565 if you're unsure whether we cover your area.",
+      "We work throughout the greater Portland metro area — all Portland neighborhoods plus surrounding cities in Multnomah, Washington, and Clackamas counties, including Beaverton, Gresham, Lake Oswego, Hillsboro, Tigard, Tualatin, Milwaukie, Happy Valley, Oregon City, and Clackamas. Call us at (971) 258-1093 if you're unsure whether we cover your area.",
   },
 ];
