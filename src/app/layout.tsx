@@ -15,19 +15,20 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://buyhousesinportland.com"),
   title: {
-    default: "Sell Your Portland Home Off-Market | Licensed Agents & Investor Network",
+    default: "Sell My House Fast Portland OR | We Buy Houses for Cash",
     template: "%s | Buy Houses in Portland",
   },
   description:
-    "Licensed Oregon agents specializing in off-market sales to cash buyers and investors. Tell us what you need — we structure the deal around your number. No MLS, no repairs, no uncertainty.",
+    "Sell your Portland house fast for cash — as-is, no repairs, no MLS listing. Licensed Oregon agents representing you to our network of cash home buyers. Close in as little as 7 days.",
   keywords: [
     "sell my house fast Portland",
-    "off market home sale Portland",
-    "cash home buyers Portland OR",
+    "we buy houses Portland",
+    "cash home buyers Portland Oregon",
     "sell house as-is Portland",
-    "Portland real estate investor",
-    "sell house without listing Portland",
-    "cash for houses Portland Oregon",
+    "sell house for cash Portland OR",
+    "sell house fast Portland Oregon",
+    "cash for houses Portland",
+    "we buy houses Portland OR",
   ],
   authors: [{ name: "Buy Houses in Portland" }],
   creator: "Buy Houses in Portland",

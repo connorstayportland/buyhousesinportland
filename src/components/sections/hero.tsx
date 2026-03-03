@@ -38,14 +38,13 @@ export function Hero() {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6 text-white">
-              Sell Your Portland Home Off-Market — We Represent You
+              Sell Your House Fast in Portland — Cash Offer Within 24 Hours
             </h1>
 
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              We are a Portland-based team of licensed agents and investors. Tell us what
-              you need to walk away with — we&apos;ll find the right cash buyer from our
-              investor network and structure the deal around your number. No MLS,
-              no repairs, no uncertainty.
+              We buy houses in Portland as-is for cash. Licensed Oregon agents representing
+              you — tell us what you need to walk away with and we&apos;ll structure the deal
+              around your number. No MLS, no repairs, no uncertainty.
             </p>
 
             <ul className="space-y-3 mb-10">

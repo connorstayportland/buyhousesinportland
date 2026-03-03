@@ -576,6 +576,355 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "sell-rental-property-portland-tired-landlord",
+    title: "How to Sell a Rental Property in Portland: A Tired Landlord's Exit Strategy",
+    description:
+      "Ready to stop being a landlord? Here's how Portland rental property owners sell fast for cash — even with tenants in place, deferred maintenance, or problem properties.",
+    date: "2026-03-03",
+    keywords: [
+      "sell rental property Portland",
+      "tired landlord Portland Oregon",
+      "sell investment property Portland",
+      "sell house with tenants Portland",
+      "landlord exit strategy Oregon",
+    ],
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Being a landlord in Portland has never been harder. Between Oregon's strict tenant protection laws, rising maintenance costs, and the constant stress of managing problem tenants, it's no surprise that more Portland landlords are looking for the exit. If you're done dealing with late rent, expensive repairs, and the endless paperwork that comes with being a landlord in one of the most tenant-friendly states in the country — you have options, and they don't require you to fix the place up or wait months for a traditional sale.",
+      },
+      {
+        type: "heading",
+        content: "Why Portland Landlords Are Selling in 2026",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Oregon's landlord-tenant laws have changed dramatically over the past several years. The state was one of the first in the country to pass statewide rent control (SB 608), limiting annual rent increases to 7% plus CPI. Portland added its own layers — mandatory relocation assistance, extended notice periods for no-cause terminations, and strict screening criteria limitations. For many small landlords who own one or two rental properties, the regulatory burden has simply become too much.",
+      },
+      {
+        type: "list",
+        content: "Common reasons Portland landlords decide to sell:",
+        items: [
+          "Tenant issues — chronic late payments, property damage, or difficult eviction processes",
+          "Deferred maintenance piling up — the cost to bring the property up to standard exceeds what they're willing to invest",
+          "Regulatory fatigue — keeping up with Portland and Oregon rental regulations is a part-time job",
+          "Better returns elsewhere — some landlords want to move capital into less management-intensive investments",
+          "Life changes — retirement, relocation, health issues, or simply being done with the stress",
+          "Inherited rental property they never wanted to manage in the first place",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Can I Sell a Rental Property With Tenants Still Living There?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Yes, and this is one of the biggest advantages of selling to a cash buyer or investor. Traditional buyers on the MLS almost always want vacant possession — which means you'd need to navigate Oregon's complex tenant termination process (60-90 day notice for no-cause in Portland, plus potential relocation assistance of up to $4,500 per unit). That process alone can take months and cost thousands before you can even list the property.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Investors, on the other hand, often prefer buying with tenants in place. A tenant-occupied property with paying renters is actually more valuable to a buy-and-hold investor because it means immediate cash flow from day one. Even if the tenants are below-market or problematic, an experienced investor knows how to handle the transition. You don't need to deal with it.",
+      },
+      {
+        type: "heading",
+        content: "What About Deferred Maintenance?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most rental properties that have been held for years have deferred maintenance. Roofs wear out, plumbing ages, paint peels, and appliances break. As a landlord, you've been patching things together to keep the property habitable — but you know it's not in the shape it needs to be for a traditional sale. Cash buyers and investors expect this. They factor repair costs into their offers and handle all the work after closing. You don't need to spend a dime on repairs before selling.",
+      },
+      {
+        type: "list",
+        content: "Common deferred maintenance on Portland rentals:",
+        items: [
+          "Aging roofs (moss damage is nearly universal in Portland)",
+          "Old or galvanized plumbing that needs full replacement",
+          "Outdated electrical (especially in pre-1960s homes)",
+          "Worn flooring, damaged drywall, and cosmetic deterioration",
+          "Foundation issues from Portland's expansive clay soils",
+          "Exterior siding rot from years of Pacific Northwest rain",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Tax Implications of Selling a Rental Property in Oregon",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Selling a rental property triggers capital gains tax on the difference between your adjusted basis (purchase price plus improvements, minus depreciation) and the sale price. If you've owned the property for years, depreciation recapture can be significant — the IRS taxes recaptured depreciation at up to 25%. Oregon state taxes add another layer on top of federal capital gains.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Some landlords use a 1031 exchange to defer taxes by reinvesting the proceeds into another investment property. But if you're truly done being a landlord, a 1031 exchange just moves the problem. It's worth consulting with a CPA before selling to understand your specific tax situation and weigh whether an exchange makes sense or if a clean sale is the better path.",
+      },
+      {
+        type: "heading",
+        content: "How the Cash Sale Process Works for Rental Properties",
+      },
+      {
+        type: "list",
+        content: "Here's what selling a rental property to a cash buyer looks like:",
+        items: [
+          "Contact us with basic property info — address, number of units, rent amounts, and any known issues",
+          "We evaluate the property and provide a no-obligation cash offer (or multiple offers from our investor network)",
+          "You accept an offer and we handle all coordination — including tenant communication if needed",
+          "Close on your timeline, typically 14-30 days (faster if there are no title complications)",
+          "Walk away with cash — no more tenant calls, no more repair bills, no more headaches",
+        ],
+      },
+      {
+        type: "heading",
+        content: "What Will I Get for My Rental Property?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Pricing depends on the property's condition, location, current rents, and how much work it needs. Properties with stable, paying tenants and reasonable condition will command higher offers. Properties with major deferred maintenance, below-market rents, or vacant units will be lower — but still fair for an as-is sale. We present offers transparently and explain exactly how the buyer arrived at their number, so you can make an informed decision.",
+      },
+      {
+        type: "callout",
+        content:
+          "Ready to stop being a landlord? We work with Portland rental property owners every day who are done dealing with the stress. Whether you have one rental or ten, tenants in place or vacant units, we can get you a cash offer within 24 hours. Call (971) 258-1093 or fill out the form on this page. No obligation, no pressure.",
+      },
+    ],
+  },
+  {
+    slug: "sell-house-during-divorce-oregon",
+    title: "Selling Your House During a Divorce in Oregon: What Both Parties Need to Know",
+    description:
+      "Going through a divorce and need to sell the house? Here's how Oregon divorce home sales work, including legal requirements, options for splitting proceeds, and how to sell fast.",
+    date: "2026-03-03",
+    keywords: [
+      "sell house divorce Portland",
+      "sell house during divorce Oregon",
+      "divorce home sale Portland",
+      "selling marital home Oregon",
+      "divorce property division Oregon",
+    ],
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Divorce is already one of the most stressful experiences anyone goes through. Add a house to the mix — typically the largest shared asset — and the complexity multiplies. Who keeps it? Who pays the mortgage while you figure it out? What if neither of you can afford to buy out the other? For many divorcing couples in Portland, selling the home for cash is the fastest, cleanest way to divide the asset and move forward with your lives.",
+      },
+      {
+        type: "heading",
+        content: "How Oregon Handles Property Division in Divorce",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Oregon is an equitable distribution state, meaning the court divides marital property in a way it considers fair — which is not always 50/50. The family home is almost always considered marital property, even if only one spouse's name is on the title, as long as it was acquired during the marriage. Both parties have a legal interest in the home's equity, and both need to agree on what happens to it — or let the court decide.",
+      },
+      {
+        type: "list",
+        content: "The three most common options for the marital home in an Oregon divorce:",
+        items: [
+          "Sell the home and split the proceeds — the cleanest option and most common when neither spouse can afford to keep it",
+          "One spouse buys out the other — requires refinancing the mortgage into one name and paying the other spouse their share of equity",
+          "Continue co-owning temporarily — sometimes used when children are involved, but creates ongoing financial entanglement",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Why Selling for Cash Makes Sense in a Divorce",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A traditional MLS listing during a divorce creates problems. Someone has to maintain the home, pay the mortgage, and keep it showing-ready — all while dealing with the emotional weight of a dissolving marriage. If one spouse has already moved out, the home may sit partially maintained. Showings require coordination between two parties who may not be communicating well. And if the home needs repairs, who pays?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A cash sale eliminates most of these headaches. There's no staging, no open houses, no months of waiting. The home sells as-is, often within two to three weeks. Both parties know exactly what they're getting, and the proceeds can be split per the divorce agreement without dragging the process out for months.",
+      },
+      {
+        type: "list",
+        content: "Advantages of a cash sale during divorce:",
+        items: [
+          "Speed — close in 7-21 days instead of 3-6 months",
+          "No repairs needed — sell as-is, no arguments over who pays for what",
+          "No showings — no strangers walking through during an already difficult time",
+          "Clean financial break — proceeds wired at closing, no ongoing entanglement",
+          "Certainty — cash deals don't fall through due to financing, appraisal, or inspection issues",
+          "Neutral process — a licensed agent represents the transaction, not either spouse",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Do Both Spouses Have to Agree to Sell?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Generally, yes — both parties need to agree to sell the home voluntarily. If you can't agree, either party can petition the court to order a sale. Oregon courts will often order a sale when keeping the home doesn't make financial sense for either party, especially when there's a mortgage that needs to be paid. A court-ordered sale takes longer and costs more in legal fees, so reaching agreement outside of court is always preferable.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "If you and your spouse agree to sell but disagree on price or process, working with a neutral licensed agent can help. We provide both parties with a transparent market analysis, present offers from multiple buyers, and let the numbers speak for themselves. This removes the emotional negotiation and gives both parties confidence that they're getting a fair deal.",
+      },
+      {
+        type: "heading",
+        content: "What If We're Underwater on the Mortgage?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "If you owe more on the mortgage than the home is currently worth, selling becomes more complicated but not impossible. You may need to pursue a short sale — where the lender agrees to accept less than the full balance owed. Short sales take longer to complete because the lender must approve the sale price, but they're far better than a foreclosure on both parties' credit reports. We have experience working with lenders on short sales and can guide you through the process.",
+      },
+      {
+        type: "heading",
+        content: "Protecting Yourself During a Divorce Home Sale",
+      },
+      {
+        type: "list",
+        content: "Key steps to protect your interests:",
+        items: [
+          "Get a professional market analysis before agreeing on any price — don't rely on Zillow estimates",
+          "Make sure the sale proceeds distribution is documented in your divorce agreement before closing",
+          "Use a licensed real estate agent — having professional representation protects both parties",
+          "Don't sign a purchase agreement without your divorce attorney reviewing it",
+          "Keep paying the mortgage until the sale closes — a missed payment hurts both parties' credit",
+        ],
+      },
+      {
+        type: "heading",
+        content: "How We Help Divorcing Couples Sell Fast",
+      },
+      {
+        type: "paragraph",
+        content:
+          "We work with divorcing couples regularly and understand the dynamics. Our role is to be a neutral professional who gets the home sold quickly and fairly so both parties can move on. We coordinate with divorce attorneys when needed, present transparent offers from our investor network, and close on whatever timeline works for your situation. Both parties get full visibility into the process.",
+      },
+      {
+        type: "callout",
+        content:
+          "Going through a divorce and need to sell the house? We can help you sell fast, as-is, without the stress of a traditional listing. Both parties get a fair deal with full transparency. Call (971) 258-1093 or fill out the form on this page for a free, confidential consultation.",
+      },
+    ],
+  },
+  {
+    slug: "sell-house-code-violations-portland",
+    title: "How to Sell a House With Code Violations in Portland",
+    description:
+      "Have a Portland home with code violations, permits issues, or a condemned notice? Here are your options for selling — including how cash buyers handle problem properties.",
+    date: "2026-03-03",
+    keywords: [
+      "sell house code violations Portland",
+      "sell condemned house Portland Oregon",
+      "code violation home sale Oregon",
+      "sell house with permits issues Portland",
+      "sell uninhabitable house Portland",
+    ],
+    sections: [
+      {
+        type: "paragraph",
+        content:
+          "Getting a code violation notice from the City of Portland is stressful enough. But when you realize you can't afford to fix the violations, and you can't sell the home through traditional channels because of them, it feels like you're stuck. You're not. Houses with code violations, expired permits, and even condemnation notices sell every day in Portland — just not on the MLS. Cash buyers and investors specialize in exactly these kinds of properties.",
+      },
+      {
+        type: "heading",
+        content: "Common Code Violations in Portland Homes",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Portland's Bureau of Development Services (BDS) enforces property maintenance codes, building codes, and zoning regulations. Violations can range from minor nuisance complaints to serious structural issues. Older homes in Portland — especially those built before 1960 — are particularly susceptible because building standards have changed dramatically over the decades.",
+      },
+      {
+        type: "list",
+        content: "The most common code violations we see in Portland:",
+        items: [
+          "Unpermitted work — additions, converted garages, basement bedrooms, or ADUs built without permits",
+          "Electrical hazards — knob-and-tube wiring, Federal Pacific panels, or amateur DIY electrical work",
+          "Structural issues — foundation failure, load-bearing wall removal, or deteriorating framing",
+          "Plumbing violations — improper drain lines, cross-connections, or failing septic systems",
+          "Exterior maintenance — deteriorating siding, roof damage, overgrown vegetation, or accumulation of debris",
+          "Habitability issues — mold, pest infestations, no working heat, or inadequate egress windows",
+        ],
+      },
+      {
+        type: "heading",
+        content: "Why Code Violations Make Traditional Sales Nearly Impossible",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Most mortgage lenders will not finance a home with active code violations, especially those affecting health and safety. FHA and VA loans have particularly strict property condition requirements. This means the vast majority of traditional buyers — the ones who need a mortgage — simply can't purchase your home. Even if you find a buyer willing to pay cash on the open market, the disclosure requirements and visible issues typically scare off anyone who isn't an experienced investor.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Listing on the MLS also means public exposure of the code violations, which can further depress offers and create a stigma around the property. The longer the listing sits, the worse the perception gets. This is why homes with code violations often languish on the market for months before eventually being sold at a steep discount — or simply withdrawn.",
+      },
+      {
+        type: "heading",
+        content: "Can I Be Forced to Fix Code Violations Before Selling?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The City of Portland can issue compliance orders requiring you to fix violations, and failure to comply can result in fines — sometimes $500 or more per day for serious violations. However, the city cannot prevent you from selling the home. You can sell a property with active code violations as long as you properly disclose them to the buyer. Oregon's property disclosure laws (ORS 105.465) require sellers to disclose all known material defects, including code violations.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "When you sell to a cash buyer, the buyer assumes responsibility for resolving the violations after closing. This is standard practice for investors — they purchase the property knowing exactly what they're getting, budget the repair costs into their offer, and handle all the compliance work with the city. The violation transfers with the property, not the person.",
+      },
+      {
+        type: "heading",
+        content: "What About Unpermitted Work?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Unpermitted work is one of the most common issues in Portland, especially in older neighborhoods where homeowners or previous owners did renovations without pulling permits. A converted garage, an added bathroom, a finished basement — if it was done without permits, it creates a problem for traditional sales because the square footage can't be counted in the listing, and lenders may flag it.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Cash buyers don't care about permits the same way lenders do. An investor who buys your home will either legalize the unpermitted work by pulling retroactive permits or, if the work is substandard, tear it out and redo it properly. Either way, it's their problem to solve — not yours. You disclose the unpermitted work, they factor it into their offer, and the sale moves forward.",
+      },
+      {
+        type: "heading",
+        content: "Selling a Condemned Property in Portland",
+      },
+      {
+        type: "paragraph",
+        content:
+          "A condemned property — one that the city has deemed unfit for habitation — is at the extreme end of code violations. But even condemned homes have value, primarily in the land and the structure's potential after renovation. Investors regularly purchase condemned properties in Portland, especially in neighborhoods where land values are high. The structure might need a complete gut renovation or even demolition and rebuild, but the investor is buying the opportunity, not the current condition.",
+      },
+      {
+        type: "heading",
+        content: "How Much Will I Get for a Home With Code Violations?",
+      },
+      {
+        type: "paragraph",
+        content:
+          "The offer will depend on the severity of the violations, the cost to cure them, and the property's location and underlying value. A home in a desirable Portland neighborhood with fixable issues (even expensive ones) will still attract strong offers because the after-repair value is high. A home with catastrophic structural issues in a less desirable area will naturally command less. The key is getting multiple offers so you understand the range and can choose the best one.",
+      },
+      {
+        type: "paragraph",
+        content:
+          "Working with a licensed agent who understands investor math ensures you're not leaving money on the table. We know what investors are willing to pay, we know the repair costs they're factoring in, and we make sure the offer reflects fair value for your property's condition and location.",
+      },
+      {
+        type: "callout",
+        content:
+          "Have a Portland home with code violations, unpermitted work, or a condemnation notice? We buy problem properties for cash — no repairs needed, no judgment. Get a no-obligation offer within 24 hours. Call (971) 258-1093 or fill out the form on this page.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {

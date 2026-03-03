@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { LeadForm } from "@/components/ui/lead-form";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Portland Cash Home Buyers",
+  title: "Contact Us — Sell My House Fast Portland | Free Cash Offer",
   description:
-    "Contact Buy Houses in Portland. Call, email, or fill out our form to get your free no-obligation cash offer.",
+    "Get a free cash offer for your Portland home. Call (971) 258-1093 or fill out our form — we respond within 24 hours. No obligation, no pressure.",
   alternates: {
     canonical: "https://buyhousesinportland.com/contact",
   },

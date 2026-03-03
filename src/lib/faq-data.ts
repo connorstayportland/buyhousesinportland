@@ -39,4 +39,29 @@ export const faqs = [
     answer:
       "We work throughout the greater Portland metro area — all Portland neighborhoods plus surrounding cities in Multnomah, Washington, and Clackamas counties, including Beaverton, Gresham, Lake Oswego, Hillsboro, Tigard, Tualatin, Milwaukie, Happy Valley, Oregon City, and Clackamas. Call us at (971) 258-1093 if you're unsure whether we cover your area.",
   },
+  {
+    question: "How do I sell my house fast in Portland?",
+    answer:
+      "The fastest way to sell your Portland house is to a cash buyer. Skip the MLS listing, skip the repairs, and skip the months of waiting for bank-financed offers. Contact us with your property address and we'll reach out within 24 hours with a no-obligation cash offer. Most cash sales in our network close in 7 to 14 days, compared to 45+ days for a traditional sale.",
+  },
+  {
+    question: "Can I sell my Portland house if I'm behind on payments?",
+    answer:
+      "Yes. If you're behind on mortgage payments or facing foreclosure, you can still sell your home — and a fast cash sale is often the best way to protect your credit and walk away with money in your pocket. Oregon law gives you at least 120 days after a Notice of Default before the auction. During that time, you have every right to sell. Contact us immediately if you're in this situation — the sooner you act, the more options you have.",
+  },
+  {
+    question: "Can I sell my house during a divorce in Oregon?",
+    answer:
+      "Yes. Selling a house during a divorce is common and often the simplest way to divide the asset. Both parties typically need to agree to the sale, or a court can order it. A cash sale is often preferred in divorce situations because it's fast, clean, and avoids the uncertainty of a months-long listing. We work with divorcing couples regularly and can coordinate with attorneys if needed.",
+  },
+  {
+    question: "Do I have to pay commissions or fees when selling to a cash buyer?",
+    answer:
+      "With us, no. Our fee is built into the transaction on the buyer side — your proceeds are based on the number you need to walk away with. There are no hidden fees, no listing commissions, and no closing cost surprises. We disclose the full deal structure upfront before you commit to anything.",
+  },
+  {
+    question: "What types of houses do you buy in Portland?",
+    answer:
+      "We buy all types of residential properties in the Portland metro area — single-family homes, duplexes, triplexes, townhouses, and condos. Any condition: fixer-uppers, fire or water damage, deferred maintenance, hoarder homes, properties with code violations, or homes that just need updating. We also buy rental properties from tired landlords looking to exit.",
+  },
 ];

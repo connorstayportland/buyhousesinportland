@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us — Licensed Portland Real Estate Agents & Investors",
+  title: "About Us — Portland Cash Home Buyers & Licensed Agents",
   description:
-    "We are a Portland-based team of licensed real estate agents and active developers. We specialize in off-market sales — representing sellers and connecting them with serious cash buyers.",
+    "Portland-based team of licensed real estate agents and active developers. We buy houses for cash and represent sellers in off-market transactions across the Portland metro area.",
   alternates: {
     canonical: "https://buyhousesinportland.com/about",
   },

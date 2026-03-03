@@ -5,9 +5,9 @@ import { faqs } from "@/lib/faq-data";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "FAQ — Selling Your Portland Home for Cash",
+  title: "FAQ — Sell My House Fast Portland | Cash Home Buyer Questions",
   description:
-    "Get answers to the most common questions about selling your Portland home fast for cash. No repairs, no commissions, close in 7–14 days.",
+    "Answers to common questions about selling your Portland house fast for cash. How it works, what we pay, timelines, fees, and what types of houses we buy.",
   alternates: {
     canonical: "https://buyhousesinportland.com/faq",
   },

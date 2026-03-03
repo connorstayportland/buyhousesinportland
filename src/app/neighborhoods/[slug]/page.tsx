@@ -24,14 +24,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `Sell Your ${hood.name} Home Off-Market | Licensed Agents & Investor Network`,
-    description: `Licensed Oregon agents helping ${hood.name} homeowners sell off-market to cash buyers and investors. No MLS, no repairs, no uncertainty — we structure the deal around what you need to walk away with.`,
+    title: `Sell My House Fast ${hood.name} OR | We Buy Houses for Cash`,
+    description: `Sell your ${hood.name} house fast for cash — as-is, no repairs, no listing. Licensed Oregon agents and cash home buyers serving ${hood.name}. Get a fair offer within 24 hours.`,
     alternates: {
       canonical: `https://buyhousesinportland.com/neighborhoods/${hood.slug}`,
     },
     openGraph: {
-      title: `Sell Your ${hood.name} Home Off-Market`,
-      description: `Licensed Oregon agents representing ${hood.name} sellers in off-market transactions. Tell us your number — we find the right buyer.`,
+      title: `Sell My House Fast in ${hood.name} | Cash Home Buyers`,
+      description: `We buy houses in ${hood.name}, Oregon. Get a fair cash offer within 24 hours — no repairs, no MLS, close on your timeline.`,
+      images: [`/neighborhoods/${hood.slug}/opengraph-image`],
     },
   };
 }
@@ -47,8 +48,8 @@ export default async function NeighborhoodPage({ params }: PageProps) {
   const localSchema = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
-    name: `Buy Houses in Portland — ${hood.name}`,
-    description: `Cash home buyers serving ${hood.name}, Oregon. We buy houses fast, as-is, for cash.`,
+    name: `We Buy Houses ${hood.name} OR — Cash Home Buyers`,
+    description: `Sell your house fast in ${hood.name}, Oregon. We buy houses as-is for cash — no repairs, no MLS listing, close in as little as 7 days.`,
     url: `https://buyhousesinportland.com/neighborhoods/${hood.slug}`,
     telephone: "(971) 258-1093",
     address: {
@@ -123,12 +124,11 @@ export default async function NeighborhoodPage({ params }: PageProps) {
             <span className="text-gray-200">{hood.name}</span>
           </nav>
           <h1 className="text-4xl font-bold mb-4">
-            Sell Your {hood.name} Home Off-Market
+            Sell My House Fast in {hood.name}, Oregon
           </h1>
           <p className="text-xl text-gray-300">
-            Licensed Oregon agents representing sellers in {hood.name} — we take your
-            property directly to our investor network and structure the deal around
-            what you need to walk away with.
+            We buy houses in {hood.name} for cash — as-is, no repairs, no MLS listing.
+            Licensed Oregon agents representing you. Get a fair offer within 24 hours.
           </p>
         </div>
       </div>
@@ -140,7 +140,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
             {/* Left: content */}
             <div className="prose prose-gray max-w-none">
               <h2 className="text-2xl font-bold text-[#0D2B45] mb-4">
-                We Buy Houses in {hood.name}, OR
+                Cash Home Buyers in {hood.name}, OR
               </h2>
               <p className="text-gray-600 mb-4 leading-relaxed">
                 {hood.description} If you want to sell your {hood.name} property without
@@ -151,7 +151,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
               </p>
 
               <h3 className="text-lg font-bold text-[#0D2B45] mt-6 mb-3">
-                Why {hood.name} Homeowners Work With Us
+                Why {hood.name} Homeowners Sell to Us
               </h3>
               <ul className="space-y-2 text-gray-600">
                 {[
@@ -205,7 +205,7 @@ export default async function NeighborhoodPage({ params }: PageProps) {
             <div className="lg:sticky lg:top-20 self-start">
               <div className="bg-[#F8FAFC] rounded-2xl p-6 border border-gray-200">
                 <h2 className="text-xl font-bold text-[#0D2B45] mb-2">
-                  Tell Us About Your {hood.name} Property
+                  Get a Cash Offer for Your {hood.name} Home
                 </h2>
                 <p className="text-gray-600 text-sm mb-5">
                   Free consultation, no obligation. We&apos;ll be in touch within 24 hours.

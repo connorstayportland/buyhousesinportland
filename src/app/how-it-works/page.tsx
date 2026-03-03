@@ -3,9 +3,9 @@ import { HowItWorks } from "@/components/sections/how-it-works";
 import { LeadForm } from "@/components/ui/lead-form";
 
 export const metadata: Metadata = {
-  title: "How It Works — Sell Your Portland Home for Cash in 3 Steps",
+  title: "How It Works — Sell Your House for Cash in Portland in 3 Steps",
   description:
-    "Our simple 3-step process: request your offer, review it, and close in as little as 7 days. No repairs, no fees, no hassle.",
+    "Sell your Portland house for cash in 3 simple steps: request your offer, review it, and close in as little as 7 days. No repairs, no commissions, no hassle.",
   alternates: {
     canonical: "https://buyhousesinportland.com/how-it-works",
   },

@@ -4,9 +4,9 @@ import { neighborhoods } from "@/lib/neighborhoods";
 import { ClientNeighborhoodMap } from "@/components/ui/client-neighborhood-map";
 
 export const metadata: Metadata = {
-  title: "Areas We Buy Houses — Portland & Surrounding Cities",
+  title: "We Buy Houses Portland Metro — All Areas & Surrounding Cities",
   description:
-    "We buy houses throughout the Portland metro area including Beaverton, Gresham, Lake Oswego, Hillsboro, Tigard, and more. Get a cash offer today.",
+    "We buy houses for cash throughout Portland, Beaverton, Gresham, Lake Oswego, Hillsboro, Tigard, and more. Sell your house fast as-is. Get a cash offer today.",
   alternates: {
     canonical: "https://buyhousesinportland.com/neighborhoods",
   },

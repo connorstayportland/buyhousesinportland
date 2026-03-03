@@ -14,9 +14,9 @@ import { faqs } from "@/lib/faq-data";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Sell Your Portland Home Off-Market | Licensed Agents & Investor Network",
+  title: "Sell My House Fast Portland OR | We Buy Houses for Cash",
   description:
-    "Licensed Oregon agents representing sellers in off-market cash transactions. Tell us what you need to walk away with — we find the right buyer. No MLS, no repairs, no uncertainty.",
+    "Sell your Portland house fast for cash — as-is, no repairs, no MLS listing. Licensed Oregon agents representing you to our network of cash home buyers. Close in as little as 7 days.",
   alternates: {
     canonical: "https://buyhousesinportland.com",
   },

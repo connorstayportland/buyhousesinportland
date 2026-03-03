@@ -35,6 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: post.description,
       type: "article",
       publishedTime: post.date,
+      images: [`/blog/${post.slug}/opengraph-image`],
     },
   };
 }
